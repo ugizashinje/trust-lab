@@ -1,0 +1,227 @@
+{
+  "common": {
+    "app": {
+      "title": "Labo de la confiance",
+      "tagline": "Un guide interactif : pourquoi des inconnus coopèrent-ils ?"
+    },
+    "nav": {
+      "language": "Langue",
+      "script": "Alphabet",
+      "back": "Retour",
+      "next": "Suivant",
+      "restart": "Recommencer",
+      "chapters": "Chapitres"
+    },
+    "chapters": {
+      "home": "Accueil",
+      "rules": "Le marché",
+      "play": "À vous",
+      "tournament": "Tournoi",
+      "evolution": "Générations",
+      "mistakes": "Erreurs",
+      "sandbox": "Bac à sable",
+      "end": "Conclusions"
+    },
+    "moves": {
+      "C": "Partager",
+      "D": "Garder"
+    },
+    "outcome": {
+      "CC": "Vous avez tous deux partagé. Chacun reçoit {you}.",
+      "CD": "Vous avez partagé, l’autre a gardé. Vous recevez {you}, l’autre {them}.",
+      "DC": "Vous avez gardé, l’autre a partagé. Vous recevez {you}, l’autre {them}.",
+      "DD": "Vous avez tous deux gardé. Chacun reçoit {you}."
+    },
+    "labels": {
+      "you": "Vous",
+      "them": "L’autre",
+      "points": "{n} pt | {n} pts"
+    }
+  },
+  "strategies": {
+    "alwaysCooperate": {
+      "name": "Colombe",
+      "tech": "Toujours coopérer",
+      "desc": "Partage à chaque fois, quoi qu’il arrive."
+    },
+    "alwaysDefect": {
+      "name": "Renard",
+      "tech": "Toujours trahir",
+      "desc": "Ne partage jamais. Prend tout ce qu’il peut."
+    },
+    "titForTat": {
+      "name": "Miroir",
+      "tech": "Donnant-donnant",
+      "desc": "Partage d’abord, puis refait ce que vous avez fait au tour précédent."
+    },
+    "grimTrigger": {
+      "name": "Éléphant",
+      "tech": "Rancunier",
+      "desc": "Partage jusqu’à votre première trahison. Ensuite, il n’oublie jamais et ne partage plus."
+    },
+    "pavlov": {
+      "name": "Cloche",
+      "tech": "Gagne-reste, perd-change",
+      "desc": "Partage d’abord. Si vous avez fait le même choix au tour précédent, il partage, sinon il garde."
+    },
+    "titForTwoTats": {
+      "name": "Tortue",
+      "tech": "Donnant-donnant indulgent",
+      "desc": "Très patiente. Ne riposte qu’après deux trahisons de suite."
+    },
+    "prober": {
+      "name": "Éclaireur",
+      "tech": "Sondeur",
+      "desc": "Vous teste avec Garder, Partager, Partager. Si vous ripostez, il joue franc jeu comme le Miroir. Sinon, il vous exploite."
+    },
+    "random": {
+      "name": "Dé",
+      "tech": "Aléatoire",
+      "desc": "Tire à pile ou face à chaque tour."
+    }
+  },
+  "sim": {
+    "controls": {
+      "step": "Génération suivante",
+      "play": "Lecture",
+      "pause": "Pause",
+      "reset": "Réinitialiser"
+    },
+    "status": {
+      "generation": "Génération {n}",
+      "total": "Total : {n}",
+      "settled": "Il ne reste qu’une stratégie : {name}.",
+      "tooSmall": "Ajoutez au moins deux marchands.",
+      "notDilemma": "Avec ces gains, ce n’est plus un vrai dilemme."
+    },
+    "settings": {
+      "title": "Réglages du monde",
+      "population": "Population",
+      "rounds": "Tours par match : {n}",
+      "noise": "Probabilité d’erreur : {n} %",
+      "replace": "Remplacés à chaque génération : {n}"
+    },
+    "payoffs": {
+      "title": "Gains",
+      "temptation": "Vous gardez, l’autre partage",
+      "reward": "Les deux partagent",
+      "punishment": "Les deux gardent",
+      "sucker": "Vous partagez, l’autre garde"
+    },
+    "chart": {
+      "title": "Évolution de la population"
+    }
+  },
+  "home": {
+    "kicker": "Une expérience interactive de 15 minutes",
+    "title": "Pourquoi des inconnus se font-ils confiance ?",
+    "lead": "Chaque jour, nous coopérons avec des gens que nous connaissons à peine, même quand tricher rapporterait davantage sur le moment. Dans ce labo, vous allez jouer à un petit jeu d’échange, opposer des stratégies entre elles et observer l’évolution de populations entières.",
+    "start": "Commencer"
+  },
+  "rules": {
+    "title": "Le marché",
+    "intro": "Deux marchands se rencontrent devant un étal. Chacun décide en secret de Partager ou de Garder. Les deux choix sont ensuite révélés en même temps et les points sont distribués.",
+    "tryIt": "Essayez toutes les combinaisons :",
+    "matrix": {
+      "caption": "Points : vous / l’autre",
+      "you": "Vous",
+      "them": "L’autre marchand"
+    },
+    "trap": {
+      "title": "Le piège",
+      "body": "Quoi que fasse l’autre marchand, garder vous rapporte plus : {temptation} au lieu de {reward} s’il partage, {punishment} au lieu de {sucker} s’il garde. Mais si vous suivez tous les deux ce raisonnement, chacun repart avec {punishment} au lieu de {reward}.",
+      "question": "Partager, est-ce donc naïf ? Voyons cela."
+    }
+  },
+  "play": {
+    "title": "À vous de jouer",
+    "intro": "Vous allez échanger avec cinq inconnus, l’un après l’autre. Chacun a sa propre façon de jouer. Vous ne saurez pas combien de tours dure une rencontre, comme dans la vraie vie.",
+    "start": "Commencer les échanges",
+    "match": {
+      "stranger": "Inconnu {n} sur {total}",
+      "round": "Tour {n}",
+      "prompt": "Que faites-vous ?",
+      "over": "L’inconnu remballe ses affaires et s’en va.",
+      "next": "Rencontrer l’inconnu suivant"
+    },
+    "score": {
+      "you": "Votre score",
+      "them": "Son score"
+    },
+    "reveal": {
+      "button": "Révéler qui ils étaient",
+      "title": "Qui étaient-ils ?",
+      "vs": "Vous {you} : {them} l’autre",
+      "total": "Votre total : {n} point | Votre total : {n} points",
+      "hint": "Regardez avec qui vous avez pu bâtir la confiance, et qui a simplement profité de vous.",
+      "again": "Rejouer"
+    }
+  },
+  "tournament": {
+    "title": "Le tournoi",
+    "intro": "Prenons du recul et laissons les stratégies s’affronter. Chaque participant rencontre tous les autres une fois. Les points de tous les matchs sont additionnés.",
+    "participants": "Participants",
+    "rounds": "Tours par match : {n}",
+    "run": "Lancer le tournoi",
+    "rerun": "Relancer",
+    "results": "Classement",
+    "empty": "Choisissez au moins deux participants.",
+    "insight": "Les stratégies qui commencent gentiment mais ripostent quand on les trompe finissent généralement en tête. Mais le classement dépend de qui d’autre est présent. Essayez de retirer quelques participants, ou de réduire les matchs à un seul tour."
+  },
+  "evolution": {
+    "title": "Générations",
+    "intro": "Les marchés évoluent. Après chaque tournoi, les moins bons s’en vont et les meilleurs amènent chacun un nouveau venu qui joue exactement comme eux. Qu’est-ce qui se répand avec le temps ?",
+    "scenarios": {
+      "doves": {
+        "title": "Colombes et Renards",
+        "desc": "Beaucoup de Colombes confiantes, quelques Renards et quelques Miroirs. Les Renards se régalent d’abord. Qui aura le dernier mot ?"
+      },
+      "oneShot": {
+        "title": "Rencontres uniques",
+        "desc": "La même foule, mais chaque paire ne se rencontre qu’une seule fois. Sans avenir, la confiance survit-elle ?"
+      },
+      "everyone": {
+        "title": "Tout le monde ensemble",
+        "desc": "Trois représentants de chaque stratégie. Qui va conquérir le marché ?"
+      }
+    }
+  },
+  "mistakes": {
+    "title": "Quand les erreurs arrivent",
+    "intro": "Jusqu’ici, chacun faisait exactement ce qu’il voulait. La vraie vie est plus désordonnée : une livraison se perd, un message est mal compris. Ici, chaque coup a une chance de mal tourner.",
+    "lesson": "Un peu de pardon aide la confiance à survivre aux accidents. Trop de pardon attire les profiteurs.",
+    "scenarios": {
+      "clean": {
+        "title": "Sans erreurs",
+        "desc": "Miroirs, Éléphants, Cloches et Tortues vivent ensemble, avec un Renard parmi eux."
+      },
+      "noisy": {
+        "title": "10 % d’erreurs",
+        "desc": "La même population, mais un coup sur dix tourne mal. Un seul accident peut déclencher une querelle sans fin entre deux Miroirs, et un Éléphant ne pardonne jamais."
+      }
+    }
+  },
+  "sandbox": {
+    "title": "Bac à sable",
+    "intro": "À vous de créer votre monde. Modifiez la population, la durée des rencontres, la probabilité d’erreur et même les gains. Saurez-vous bâtir un monde où la confiance l’emporte ? Ou un monde où elle s’effondre ?"
+  },
+  "end": {
+    "title": "Ce que nous avons appris",
+    "closing": "Rien de tout cela ne demande d’être naïf. Commencez avec bienveillance, répondez avec équité et laissez une place aux secondes chances.",
+    "credits": "Fondé sur des décennies de recherche en théorie des jeux, notamment les tournois informatiques de Robert Axelrod, et inspiré de « The Evolution of Trust » de Nicky Case.",
+    "lessons": {
+      "future": {
+        "title": "La confiance a besoin d’un avenir",
+        "body": "Quand on s’attend à se revoir, partager est payant. Quand chaque rencontre est unique, garder l’emporte."
+      },
+      "winwin": {
+        "title": "Les deux camps doivent y gagner",
+        "body": "Si partager rapporte trop peu, ou tricher rapporte trop, la confiance s’effondre. Essayez dans le bac à sable."
+      },
+      "forgive": {
+        "title": "Les erreurs appellent le pardon",
+        "body": "Dans un monde imparfait, les stratégies qui ripostent mais savent aussi pardonner font mieux que celles qui gardent rancune."
+      }
+    }
+  }
+}

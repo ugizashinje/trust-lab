@@ -1,0 +1,227 @@
+{
+  "common": {
+    "app": {
+      "title": "Laboratorija poverenja",
+      "tagline": "Interaktivni vodič: zašto stranci sarađuju"
+    },
+    "nav": {
+      "language": "Jezik",
+      "script": "Pismo",
+      "back": "Nazad",
+      "next": "Dalje",
+      "restart": "Počnite ispočetka",
+      "chapters": "Poglavlja"
+    },
+    "chapters": {
+      "home": "Dobrodošli",
+      "rules": "Dogovor",
+      "play": "Vaš red",
+      "tournament": "Turnir",
+      "evolution": "Generacije",
+      "mistakes": "Greške",
+      "sandbox": "Peskovnik",
+      "end": "Zaključci"
+    },
+    "moves": {
+      "C": "Podeli",
+      "D": "Zadrži"
+    },
+    "outcome": {
+      "CC": "Oboje ste podelili. Svako dobija {you}.",
+      "CD": "Vi ste podelili, drugi trgovac je zadržao. Vi dobijate {you}, on dobija {them}.",
+      "DC": "Vi ste zadržali, drugi trgovac je podelio. Vi dobijate {you}, on dobija {them}.",
+      "DD": "Oboje ste zadržali. Svako dobija {you}."
+    },
+    "labels": {
+      "you": "Vi",
+      "them": "Drugi",
+      "points": "{n} poen | {n} poena | {n} poena"
+    }
+  },
+  "strategies": {
+    "alwaysCooperate": {
+      "name": "Golub",
+      "tech": "Uvek sarađuj",
+      "desc": "Deli svaki put, šta god da se desi."
+    },
+    "alwaysDefect": {
+      "name": "Lisica",
+      "tech": "Uvek izdaj",
+      "desc": "Nikad ne deli. Uzima sve što može."
+    },
+    "titForTat": {
+      "name": "Ogledalo",
+      "tech": "Milo za drago",
+      "desc": "Prvo podeli, a zatim radi ono što ste vi uradili u prethodnoj rundi."
+    },
+    "grimTrigger": {
+      "name": "Slon",
+      "tech": "Zlopamtilo",
+      "desc": "Deli dok ga jednom ne izdate. Posle toga nikad ne zaboravlja i više nikad ne deli."
+    },
+    "pavlov": {
+      "name": "Zvono",
+      "tech": "Dobitak ostaje, gubitak menja",
+      "desc": "Prvo podeli. Ako ste u prethodnoj rundi oboje izabrali isto, deli, a ako niste, zadržava."
+    },
+    "titForTwoTats": {
+      "name": "Kornjača",
+      "tech": "Milo za dvostruko drago",
+      "desc": "Veoma strpljiva. Uzvraća tek kada je izdate dva puta zaredom."
+    },
+    "prober": {
+      "name": "Izviđač",
+      "tech": "Ispitivač",
+      "desc": "Testira vas sa Zadrži, Podeli, Podeli. Ako uzvratite, igra pošteno kao Ogledalo. Ako ne, iskorišćava vas."
+    },
+    "random": {
+      "name": "Kocka",
+      "tech": "Nasumično",
+      "desc": "Baca novčić svake runde."
+    }
+  },
+  "sim": {
+    "controls": {
+      "step": "Sledeća generacija",
+      "play": "Pusti",
+      "pause": "Pauza",
+      "reset": "Resetuj"
+    },
+    "status": {
+      "generation": "Generacija {n}",
+      "total": "Ukupno: {n}",
+      "settled": "Ostala je samo strategija: {name}.",
+      "tooSmall": "Dodajte bar dva trgovca.",
+      "notDilemma": "Sa ovim nagradama to više nije prava dilema."
+    },
+    "settings": {
+      "title": "Podešavanja sveta",
+      "population": "Populacija",
+      "rounds": "Rundi po meču: {n}",
+      "noise": "Šansa za grešku: {n}%",
+      "replace": "Zamenjenih po generaciji: {n}"
+    },
+    "payoffs": {
+      "title": "Nagrade",
+      "temptation": "Vi zadržite, drugi podeli",
+      "reward": "Oboje podele",
+      "punishment": "Oboje zadrže",
+      "sucker": "Vi podelite, drugi zadrži"
+    },
+    "chart": {
+      "title": "Populacija kroz vreme"
+    }
+  },
+  "home": {
+    "kicker": "Interaktivno iskustvo od 15 minuta",
+    "title": "Zašto stranci veruju jedni drugima?",
+    "lead": "Svakog dana sarađujemo s ljudima koje jedva poznajemo, čak i kada bi nam varanje u tom trenutku donelo više. U ovoj laboratoriji igraćete jednostavnu igru razmene, suprotstavljati strategije jedne drugima i posmatrati kako se razvijaju čitave populacije.",
+    "start": "Počnite"
+  },
+  "rules": {
+    "title": "Dogovor",
+    "intro": "Dva trgovca se sretnu kod tezge na pijaci. Svaki od njih u tajnosti odlučuje da li će Podeliti ili Zadržati. Zatim se oba izbora otkrivaju u isto vreme i dele se poeni.",
+    "tryIt": "Isprobajte sve kombinacije:",
+    "matrix": {
+      "caption": "Poeni: vi / drugi",
+      "you": "Vi",
+      "them": "Drugi trgovac"
+    },
+    "trap": {
+      "title": "Zamka",
+      "body": "Šta god drugi trgovac uradio, zadržavanje vam donosi više: {temptation} umesto {reward} ako on podeli, {punishment} umesto {sucker} ako on zadrži. Ali ako oboje razmišljate tako, svako odlazi sa {punishment} umesto sa {reward}.",
+      "question": "Da li je onda deljenje naivno? Hajde da saznamo."
+    }
+  },
+  "play": {
+    "title": "Vaš red",
+    "intro": "Trgovaćete sa pet stranaca, jednim za drugim. Svaki od njih igra na svoj način. Nećete znati koliko rundi traje susret, baš kao u stvarnom životu.",
+    "start": "Počnite trgovinu",
+    "match": {
+      "stranger": "Stranac {n} od {total}",
+      "round": "Runda {n}",
+      "prompt": "Šta ćete da uradite?",
+      "over": "Stranac pakuje stvari i odlazi.",
+      "next": "Upoznajte sledećeg stranca"
+    },
+    "score": {
+      "you": "Vaš rezultat",
+      "them": "Njegov rezultat"
+    },
+    "reveal": {
+      "button": "Otkrijte ko su bili",
+      "title": "Ko su bili?",
+      "vs": "Vi {you} : {them} drugi",
+      "total": "Ukupno: {n} poen | Ukupno: {n} poena | Ukupno: {n} poena",
+      "hint": "Pogledajte s kim ste uspeli da izgradite poverenje, a ko vas je samo iskoristio.",
+      "again": "Igrajte ponovo"
+    }
+  },
+  "tournament": {
+    "title": "Turnir",
+    "intro": "Hajde da se povučemo i pustimo strategije da igraju jedna protiv druge. Svaki učesnik igra po jedan meč sa svim ostalima. Poeni iz svih mečeva se sabiraju.",
+    "participants": "Učesnici",
+    "rounds": "Rundi po meču: {n}",
+    "run": "Pokrenite turnir",
+    "rerun": "Pokrenite ponovo",
+    "results": "Tabela",
+    "empty": "Izaberite bar dva učesnika.",
+    "insight": "Strategije koje počinju ljubazno, ali uzvraćaju kada ih neko prevari, obično završe pri vrhu. Ali poredak zavisi od toga ko je još u igri. Probajte da uklonite nekoliko učesnika ili da skratite mečeve na samo jednu rundu."
+  },
+  "evolution": {
+    "title": "Generacije",
+    "intro": "Tržišta se menjaju. Posle svakog turnira, oni sa najmanje poena odlaze, a najbolji dovode po jednog novajliju koji igra isto kao oni. Šta se širi s vremenom?",
+    "scenarios": {
+      "doves": {
+        "title": "Golubovi i Lisice",
+        "desc": "Mnogo poverljivih Golubova, nekoliko Lisica i nekoliko Ogledala. Lisice se prvo goste. Ko će imati poslednju reč?"
+      },
+      "oneShot": {
+        "title": "Jednokratni susreti",
+        "desc": "Ista gomila, ali svaki par se sreće samo jednom. Da li poverenje opstaje bez budućnosti?"
+      },
+      "everyone": {
+        "title": "Svi zajedno",
+        "desc": "Po tri predstavnika svake strategije. Ko će preuzeti pijacu?"
+      }
+    }
+  },
+  "mistakes": {
+    "title": "Kada se dese greške",
+    "intro": "Do sada je svako radio tačno ono što je nameravao. Stvarni život je haotičniji: pošiljka se izgubi, poruka se pogrešno shvati. Ovde svaki potez ima šansu da ispadne pogrešno.",
+    "lesson": "Malo praštanja pomaže poverenju da preživi nezgode. Previše praštanja privlači one koji iskorišćavaju druge.",
+    "scenarios": {
+      "clean": {
+        "title": "Bez grešaka",
+        "desc": "Ogledala, Slonovi, Zvona i Kornjače žive zajedno, uz jednu Lisicu među njima."
+      },
+      "noisy": {
+        "title": "10% grešaka",
+        "desc": "Ista populacija, ali svaki deseti potez ispadne pogrešno. Jedna nezgoda može da započne beskrajnu svađu između dva Ogledala, a Slon nikad ne prašta."
+      }
+    }
+  },
+  "sandbox": {
+    "title": "Peskovnik",
+    "intro": "Sada je ovo vaš svet. Menjajte populaciju, dužinu susreta, šansu za grešku, pa čak i nagrade. Možete li da napravite svet u kom poverenje pobeđuje? Ili onaj u kom se ruši?"
+  },
+  "end": {
+    "title": "Šta smo naučili",
+    "closing": "Ništa od ovoga ne traži da budete naivni. Počnite ljubazno, odgovarajte pošteno i ostavite prostora za drugu šansu.",
+    "credits": "Zasnovano na decenijama istraživanja teorije igara, posebno na kompjuterskim turnirima Roberta Akselroda, i inspirisano igrom „The Evolution of Trust“ autora Nikija Kejsa.",
+    "lessons": {
+      "future": {
+        "title": "Poverenju je potrebna budućnost",
+        "body": "Kada ljudi očekuju da će se ponovo sresti, deljenje se isplati. Kada je svaki susret jednokratan, zadržavanje pobeđuje."
+      },
+      "winwin": {
+        "title": "Obe strane moraju da dobiju",
+        "body": "Ako deljenje donosi premalo, ili varanje previše, poverenje se ruši. Probajte u peskovniku."
+      },
+      "forgive": {
+        "title": "Greške traže praštanje",
+        "body": "U nesavršenom svetu, strategije koje uzvraćaju ali i opraštaju prolaze bolje od onih koje pamte zlo."
+      }
+    }
+  }
+}

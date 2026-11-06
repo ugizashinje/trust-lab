@@ -1,0 +1,24 @@
+{
+  "name": "trust-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @trust-lab/web",
+    "dev:api": "npm run dev -w @trust-lab/api",
+    "build": "npm run build -w @trust-lab/web",
+    "build:api": "npm run build -w @trust-lab/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:migrate": "npm run migrate -w @trust-lab/api"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

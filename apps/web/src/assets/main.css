@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens. Every value here becomes a Tailwind utility,
+ * e.g. --color-accent → bg-accent / text-accent / border-accent.
+ */
+@theme {
+  --color-paper: #faf7f2;
+  --color-sand: #f6f2ec;
+  --color-ink: #1f2430;
+  --color-ink-soft: #3a4150;
+  --color-muted: #6b7280;
+  --color-line: #e7e1d8;
+  --color-line-strong: #cfc6b8;
+  --color-accent: #2f9e6e;
+  --color-accent-strong: #278a5f;
+  --color-accent-soft: #eef7f2;
+  --color-share: #2f9e6e;
+  --color-keep: #d4553f;
+  --color-warn: #b45309;
+
+  /* System stacks with full Latin + Cyrillic coverage on every major OS. */
+  --font-sans: 'Segoe UI', system-ui, -apple-system, 'Noto Sans', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.04), 0 6px 20px rgb(31 36 48 / 0.06);
+
+  --animate-bob: bob 2.4s ease-in-out infinite;
+  @keyframes bob {
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply min-h-screen bg-paper font-sans leading-relaxed text-ink antialiased;
+  }
+  h1,
+  h2 {
+    @apply font-display leading-tight;
+  }
+  h1 {
+    @apply mb-2 text-[clamp(1.9rem,4vw,2.6rem)];
+  }
+  h2 {
+    @apply mb-2 text-[1.35rem];
+  }
+  :focus-visible {
+    @apply outline-3 outline-offset-2 outline-blue-300;
+  }
+  input[type='range'] {
+    @apply w-full accent-accent;
+  }
+}
+
+/*
+ * Small set of shared building blocks. Keep this list short: anything used in
+ * only one place belongs in the template as utilities.
+ */
+@layer components {
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-1.5 rounded-full border border-line bg-white px-4 py-2 font-semibold text-ink no-underline transition hover:border-line-strong active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply border-accent bg-accent text-white hover:border-accent-strong hover:bg-accent-strong;
+  }
+  .btn-ghost {
+    @apply bg-transparent;
+  }
+  .btn-lg {
+    @apply px-6 py-3 text-[1.05rem];
+  }
+  .btn-share {
+    @apply min-w-32 border-share bg-share text-white;
+  }
+  .btn-keep {
+    @apply min-w-32 border-keep bg-keep text-white;
+  }
+
+  .card {
+    @apply rounded-2xl border border-line bg-white p-5 shadow-card;
+  }
+  .callout {
+    @apply rounded-r-2xl border-l-4 border-accent bg-accent-soft px-5 py-4;
+  }
+  .kicker {
+    @apply text-xs font-semibold tracking-widest text-accent uppercase;
+  }
+  .lead {
+    @apply max-w-[65ch] text-lg text-ink-soft;
+  }
+
+  .segmented {
+    @apply inline-flex overflow-hidden rounded-full border border-line bg-white;
+  }
+  .segmented > button {
+    @apply cursor-pointer border-0 bg-transparent px-3.5 py-1.5 text-ink;
+  }
+  .segmented > button + button {
+    @apply border-l border-line;
+  }
+  .segmented > button[aria-pressed='true'] {
+    @apply bg-ink text-white;
+  }
+  .segmented > button.move-C[aria-pressed='true'] {
+    @apply bg-share;
+  }
+  .segmented > button.move-D[aria-pressed='true'] {
+    @apply bg-keep;
+  }
+}
+
+/* Vue <TransitionGroup name="dot"> classes for the population ring. */
+.dot-enter-active,
+.dot-leave-active {
+  transition: opacity 0.45s;
+}
+.dot-enter-from,
+.dot-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

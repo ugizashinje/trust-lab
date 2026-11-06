@@ -1,0 +1,227 @@
+{
+  "common": {
+    "app": {
+      "title": "Trust Lab",
+      "tagline": "An interactive guide to why strangers cooperate"
+    },
+    "nav": {
+      "language": "Language",
+      "script": "Script",
+      "back": "Back",
+      "next": "Next",
+      "restart": "Start over",
+      "chapters": "Chapters"
+    },
+    "chapters": {
+      "home": "Welcome",
+      "rules": "The deal",
+      "play": "Your turn",
+      "tournament": "Tournament",
+      "evolution": "Generations",
+      "mistakes": "Mistakes",
+      "sandbox": "Sandbox",
+      "end": "Takeaways"
+    },
+    "moves": {
+      "C": "Share",
+      "D": "Keep"
+    },
+    "outcome": {
+      "CC": "You both shared. Each of you gets {you}.",
+      "CD": "You shared, they kept. You get {you}, they get {them}.",
+      "DC": "You kept, they shared. You get {you}, they get {them}.",
+      "DD": "You both kept. Each of you gets {you}."
+    },
+    "labels": {
+      "you": "You",
+      "them": "Them",
+      "points": "{n} pt | {n} pts"
+    }
+  },
+  "strategies": {
+    "alwaysCooperate": {
+      "name": "Dove",
+      "tech": "Always Cooperate",
+      "desc": "Shares every single time, no matter what."
+    },
+    "alwaysDefect": {
+      "name": "Fox",
+      "tech": "Always Defect",
+      "desc": "Never shares. Takes whatever it can get."
+    },
+    "titForTat": {
+      "name": "Mirror",
+      "tech": "Tit for Tat",
+      "desc": "Shares first, then does whatever you did last round."
+    },
+    "grimTrigger": {
+      "name": "Elephant",
+      "tech": "Grim Trigger",
+      "desc": "Shares until you betray it once. After that it never forgets and never shares again."
+    },
+    "pavlov": {
+      "name": "Bell",
+      "tech": "Win-Stay, Lose-Shift",
+      "desc": "Shares first. If you both made the same choice last round it shares, otherwise it keeps."
+    },
+    "titForTwoTats": {
+      "name": "Tortoise",
+      "tech": "Tit for Two Tats",
+      "desc": "Very patient. Only hits back after you betray it twice in a row."
+    },
+    "prober": {
+      "name": "Scout",
+      "tech": "Prober",
+      "desc": "Tests you with Keep, Share, Share. If you hit back, it plays fair like the Mirror. If not, it exploits you."
+    },
+    "random": {
+      "name": "Dice",
+      "tech": "Random",
+      "desc": "Flips a coin every round."
+    }
+  },
+  "sim": {
+    "controls": {
+      "step": "Next generation",
+      "play": "Play",
+      "pause": "Pause",
+      "reset": "Reset"
+    },
+    "status": {
+      "generation": "Generation {n}",
+      "total": "Total: {n}",
+      "settled": "Only one strategy is left: {name}.",
+      "tooSmall": "Add at least two traders.",
+      "notDilemma": "With these payoffs it is no longer a real dilemma."
+    },
+    "settings": {
+      "title": "World settings",
+      "population": "Population",
+      "rounds": "Rounds per match: {n}",
+      "noise": "Mistake chance: {n}%",
+      "replace": "Replaced each generation: {n}"
+    },
+    "payoffs": {
+      "title": "Payoffs",
+      "temptation": "You keep, they share",
+      "reward": "Both share",
+      "punishment": "Both keep",
+      "sucker": "You share, they keep"
+    },
+    "chart": {
+      "title": "Population over time"
+    }
+  },
+  "home": {
+    "kicker": "A 15-minute interactive",
+    "title": "Why do strangers trust each other?",
+    "lead": "Every day, people cooperate with others they barely know, even when cheating would pay more in the moment. In this lab you will play a simple trading game, pit strategies against each other and watch whole populations evolve.",
+    "start": "Start"
+  },
+  "rules": {
+    "title": "The deal",
+    "intro": "Two traders meet at a market stall. Each one secretly decides to Share or Keep. Then both choices are revealed at the same time and points are handed out.",
+    "tryIt": "Try every combination:",
+    "matrix": {
+      "caption": "Points: you / them",
+      "you": "You",
+      "them": "The other trader"
+    },
+    "trap": {
+      "title": "The trap",
+      "body": "Whatever the other trader does, keeping earns you more: {temptation} instead of {reward} if they share, {punishment} instead of {sucker} if they keep. But if both of you follow that logic, you each walk away with {punishment} instead of {reward}.",
+      "question": "So is sharing just naive? Let’s find out."
+    }
+  },
+  "play": {
+    "title": "Your turn",
+    "intro": "You will trade with five strangers, one after another. Each has their own way of playing. You won’t know how many rounds a meeting lasts, just like in real life.",
+    "start": "Begin trading",
+    "match": {
+      "stranger": "Stranger {n} of {total}",
+      "round": "Round {n}",
+      "prompt": "What do you do?",
+      "over": "The stranger packs up and leaves.",
+      "next": "Meet the next stranger"
+    },
+    "score": {
+      "you": "Your score",
+      "them": "Their score"
+    },
+    "reveal": {
+      "button": "Reveal who they were",
+      "title": "Who were they?",
+      "vs": "You {you} : {them} them",
+      "total": "Your total: {n} point | Your total: {n} points",
+      "hint": "Look at who you could build trust with, and who simply took advantage of you.",
+      "again": "Play again"
+    }
+  },
+  "tournament": {
+    "title": "The tournament",
+    "intro": "Let’s step back and let the strategies play each other. Every participant meets every other participant for one match. Points from all matches are added up.",
+    "participants": "Participants",
+    "rounds": "Rounds per match: {n}",
+    "run": "Run the tournament",
+    "rerun": "Run again",
+    "results": "Leaderboard",
+    "empty": "Pick at least two participants.",
+    "insight": "Strategies that start nice but hit back when cheated usually finish near the top. But the ranking depends on who else is in the room. Try removing a few participants, or set the match length to 1 round."
+  },
+  "evolution": {
+    "title": "Generations",
+    "intro": "Markets change. After every tournament, the lowest scorers leave and the top scorers each bring along a newcomer who plays just like them. What spreads over time?",
+    "scenarios": {
+      "doves": {
+        "title": "Doves and Foxes",
+        "desc": "Lots of trusting Doves, a few Foxes and a few Mirrors. The Foxes feast first. Who has the last word?"
+      },
+      "oneShot": {
+        "title": "One-time meetings",
+        "desc": "The same crowd, but every pair meets only once. Without a future, does trust survive?"
+      },
+      "everyone": {
+        "title": "Everyone together",
+        "desc": "Three of every strategy. Who takes over the market?"
+      }
+    }
+  },
+  "mistakes": {
+    "title": "When mistakes happen",
+    "intro": "So far everyone did exactly what they intended. Real life is messier: a delivery gets lost, a message is misread. Here every move has a chance to come out wrong.",
+    "lesson": "A little forgiveness helps trust survive accidents. Too much forgiveness invites exploiters.",
+    "scenarios": {
+      "clean": {
+        "title": "No mistakes",
+        "desc": "Mirrors, Elephants, Bells and Tortoises live together, with one Fox in the mix."
+      },
+      "noisy": {
+        "title": "10% mistakes",
+        "desc": "The same population, but one move in ten goes wrong. A single accident can start an endless feud between two Mirrors, and an Elephant never forgives."
+      }
+    }
+  },
+  "sandbox": {
+    "title": "Sandbox",
+    "intro": "Now it’s your world. Change the population, the length of meetings, the chance of mistakes and even the payoffs. Can you build a world where trust wins? Or one where it collapses?"
+  },
+  "end": {
+    "title": "What we learned",
+    "closing": "None of this asks you to be naive. Start kind, respond fairly and leave room for second chances.",
+    "credits": "Built on decades of game theory research, especially Robert Axelrod’s computer tournaments, and inspired by Nicky Case’s “The Evolution of Trust”.",
+    "lessons": {
+      "future": {
+        "title": "Trust needs a future",
+        "body": "When people expect to meet again, sharing pays off. When every meeting is a one-off, keeping wins."
+      },
+      "winwin": {
+        "title": "Both sides must gain",
+        "body": "If sharing pays too little, or cheating pays too much, trust collapses. Try it in the sandbox."
+      },
+      "forgive": {
+        "title": "Mistakes call for forgiveness",
+        "body": "In a noisy world, strategies that hit back but also forgive do better than those that hold grudges."
+      }
+    }
+  }
+}
