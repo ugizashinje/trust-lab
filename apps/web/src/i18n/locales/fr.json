@@ -60,7 +60,7 @@
       "desc": "Partage jusqu’à votre première trahison. Ensuite, il n’oublie jamais et ne partage plus."
     },
     "pavlov": {
-      "name": "Cloche",
+      "name": "Chien",
       "tech": "Gagne-reste, perd-change",
       "desc": "Partage d’abord. Si vous avez fait le même choix au tour précédent, il partage, sinon il garde."
     },
@@ -70,7 +70,7 @@
       "desc": "Très patiente. Ne riposte qu’après deux trahisons de suite."
     },
     "prober": {
-      "name": "Éclaireur",
+      "name": "Requin",
       "tech": "Sondeur",
       "desc": "Vous teste avec Garder, Partager, Partager. Si vous ripostez, il joue franc jeu comme le Singe. Sinon, il vous exploite."
     }
@@ -189,7 +189,7 @@
     "scenarios": {
       "clean": {
         "title": "Sans erreurs",
-        "desc": "Singes, Éléphants, Cloches et Tortues vivent ensemble, avec un Renard parmi eux."
+        "desc": "Singes, Éléphants, Chiens et Tortues vivent ensemble, avec un Renard parmi eux."
       },
       "noisy": {
         "title": "10 % d’erreurs",

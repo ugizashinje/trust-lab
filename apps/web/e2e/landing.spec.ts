@@ -87,7 +87,7 @@ test('reduced motion: no auto-rotation, still interactive', async ({ page, open 
   await page.clock.runFor(ROTATE_MS * 3)
   await expect(page.getByText('Shares every single time, no matter what.')).toBeVisible()
 
-  await page.getByRole('button', { name: 'Scout', exact: true }).hover()
+  await page.getByRole('button', { name: 'Shark', exact: true }).hover()
   await expect(page.getByText(/Tests you with Keep, Share, Share/)).toBeVisible()
 })
 

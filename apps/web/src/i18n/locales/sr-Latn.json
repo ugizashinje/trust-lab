@@ -60,7 +60,7 @@
       "desc": "Deli dok ga jednom ne izdate. Posle toga nikad ne zaboravlja i više nikad ne deli."
     },
     "pavlov": {
-      "name": "Zvono",
+      "name": "Pas",
       "tech": "Dobitak ostaje, gubitak menja",
       "desc": "Prvo podeli. Ako ste u prethodnoj rundi oboje izabrali isto, deli, a ako niste, zadržava."
     },
@@ -70,7 +70,7 @@
       "desc": "Veoma strpljiva. Uzvraća tek kada je izdate dva puta zaredom."
     },
     "prober": {
-      "name": "Izviđač",
+      "name": "Ajkula",
       "tech": "Ispitivač",
       "desc": "Testira vas sa Zadrži, Podeli, Podeli. Ako uzvratite, igra pošteno kao Majmun. Ako ne, iskorišćava vas."
     }
@@ -189,7 +189,7 @@
     "scenarios": {
       "clean": {
         "title": "Bez grešaka",
-        "desc": "Majmuni, Slonovi, Zvona i Kornjače žive zajedno, uz jednu Lisicu među njima."
+        "desc": "Majmuni, Slonovi, Psi i Kornjače žive zajedno, uz jednu Lisicu među njima."
       },
       "noisy": {
         "title": "10% grešaka",

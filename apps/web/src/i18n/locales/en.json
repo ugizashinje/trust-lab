@@ -60,7 +60,7 @@
       "desc": "Shares until you betray it once. After that it never forgets and never shares again."
     },
     "pavlov": {
-      "name": "Bell",
+      "name": "Dog",
       "tech": "Win-Stay, Lose-Shift",
       "desc": "Shares first. If you both made the same choice last round it shares, otherwise it keeps."
     },
@@ -70,7 +70,7 @@
       "desc": "Very patient. Only hits back after you betray it twice in a row."
     },
     "prober": {
-      "name": "Scout",
+      "name": "Shark",
       "tech": "Prober",
       "desc": "Tests you with Keep, Share, Share. If you hit back, it plays fair like the Monkey. If not, it exploits you."
     }
@@ -189,7 +189,7 @@
     "scenarios": {
       "clean": {
         "title": "No mistakes",
-        "desc": "Monkeys, Elephants, Bells and Tortoises live together, with one Fox in the mix."
+        "desc": "Monkeys, Elephants, Dogs and Tortoises live together, with one Fox in the mix."
       },
       "noisy": {
         "title": "10% mistakes",
