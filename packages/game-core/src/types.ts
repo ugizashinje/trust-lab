@@ -24,7 +24,6 @@ export type StrategyId =
   | 'pavlov'
   | 'titForTwoTats'
   | 'prober'
-  | 'random'
 
 export interface DecisionContext {
   /** 0-based index of the round being decided. */

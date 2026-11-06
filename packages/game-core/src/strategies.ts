@@ -57,12 +57,6 @@ export const STRATEGIES: Readonly<Record<StrategyId, Strategy>> = {
       return retaliated ? (last(theirs) ?? 'C') : 'D'
     },
   },
-
-  /** Flips a coin. */
-  random: {
-    id: 'random',
-    decide: ({ rng }) => (rng() < 0.5 ? 'C' : 'D'),
-  },
 }
 
 export const STRATEGY_IDS = Object.keys(STRATEGIES) as StrategyId[]

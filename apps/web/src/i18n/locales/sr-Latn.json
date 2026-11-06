@@ -50,7 +50,7 @@
       "desc": "Nikad ne deli. Uzima sve što može."
     },
     "titForTat": {
-      "name": "Ogledalo",
+      "name": "Majmun",
       "tech": "Milo za drago",
       "desc": "Prvo podeli, a zatim radi ono što ste vi uradili u prethodnoj rundi."
     },
@@ -72,12 +72,7 @@
     "prober": {
       "name": "Izviđač",
       "tech": "Ispitivač",
-      "desc": "Testira vas sa Zadrži, Podeli, Podeli. Ako uzvratite, igra pošteno kao Ogledalo. Ako ne, iskorišćava vas."
-    },
-    "random": {
-      "name": "Kocka",
-      "tech": "Nasumično",
-      "desc": "Baca novčić svake runde."
+      "desc": "Testira vas sa Zadrži, Podeli, Podeli. Ako uzvratite, igra pošteno kao Majmun. Ako ne, iskorišćava vas."
     }
   },
   "sim": {
@@ -116,7 +111,8 @@
     "kicker": "Interaktivno iskustvo od 15 minuta",
     "title": "Zašto stranci veruju jedni drugima?",
     "lead": "Svakog dana sarađujemo s ljudima koje jedva poznajemo, čak i kada bi nam varanje u tom trenutku donelo više. U ovoj laboratoriji igraćete jednostavnu igru razmene, suprotstavljati strategije jedne drugima i posmatrati kako se razvijaju čitave populacije.",
-    "start": "Počnite"
+    "start": "Počnite",
+    "hint": "Pokažite ili dodirnite lik da biste saznali kako igra."
   },
   "rules": {
     "title": "Dogovor",
@@ -174,7 +170,7 @@
     "scenarios": {
       "doves": {
         "title": "Golubovi i Lisice",
-        "desc": "Mnogo poverljivih Golubova, nekoliko Lisica i nekoliko Ogledala. Lisice se prvo goste. Ko će imati poslednju reč?"
+        "desc": "Mnogo poverljivih Golubova, nekoliko Lisica i nekoliko Majmuna. Lisice se prvo goste. Ko će imati poslednju reč?"
       },
       "oneShot": {
         "title": "Jednokratni susreti",
@@ -193,11 +189,11 @@
     "scenarios": {
       "clean": {
         "title": "Bez grešaka",
-        "desc": "Ogledala, Slonovi, Zvona i Kornjače žive zajedno, uz jednu Lisicu među njima."
+        "desc": "Majmuni, Slonovi, Zvona i Kornjače žive zajedno, uz jednu Lisicu među njima."
       },
       "noisy": {
         "title": "10% grešaka",
-        "desc": "Ista populacija, ali svaki deseti potez ispadne pogrešno. Jedna nezgoda može da započne beskrajnu svađu između dva Ogledala, a Slon nikad ne prašta."
+        "desc": "Ista populacija, ali svaki deseti potez ispadne pogrešno. Jedna nezgoda može da započne beskrajnu svađu između dva Majmuna, a Slon nikad ne prašta."
       }
     }
   },

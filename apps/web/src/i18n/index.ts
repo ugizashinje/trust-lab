@@ -15,9 +15,9 @@ export type MessageSchema = typeof en
  *   3. run `npm test -w @trust-lab/web` (key, depth and placeholder checks).
  */
 export const LANGUAGES = [
+  { id: 'sr', label: 'Српски', locales: ['sr-Cyrl', 'sr-Latn'] },
   { id: 'en', label: 'English', locales: ['en'] },
   { id: 'fr', label: 'Français', locales: ['fr'] },
-  { id: 'sr', label: 'Српски', locales: ['sr-Cyrl', 'sr-Latn'] },
 ] as const
 
 export type Locale = 'en' | 'fr' | 'sr-Cyrl' | 'sr-Latn'
@@ -32,13 +32,16 @@ const messages: Record<Locale, MessageSchema> = {
 
 export const LOCALES = Object.keys(messages) as Locale[]
 const STORAGE_KEY = 'trust-lab.locale'
-const DEFAULT_LOCALE: Locale = 'en'
+/** What every new visitor sees, regardless of browser language. */
+export const DEFAULT_LOCALE: Locale = 'sr-Cyrl'
+/** Used only if a key were missing (tests guarantee it never is); en.json is the key source. */
+const FALLBACK_LOCALE: Locale = 'en'
 
 export function isLocale(value: unknown): value is Locale {
   return typeof value === 'string' && (LOCALES as string[]).includes(value)
 }
 
-/** Maps a BCP 47 tag (e.g. from the browser) to a supported locale. */
+/** Maps a BCP 47 tag (e.g. from ?lang=) to a supported locale. */
 export function matchLocale(tag: string): Locale | undefined {
   const lower = tag.toLowerCase()
   if (lower.startsWith('sr')) return lower.includes('latn') ? 'sr-Latn' : 'sr-Cyrl'
@@ -50,7 +53,10 @@ export function languageOf(locale: Locale): LanguageId {
   return LANGUAGES.find((l) => (l.locales as readonly string[]).includes(locale))!.id
 }
 
-/** Starting locale: ?lang= → saved choice → browser languages → English. */
+/**
+ * Starting locale: ?lang= → the visitor's saved choice → Serbian Cyrillic.
+ * The browser language is intentionally ignored: Serbian is the default.
+ */
 function detectLocale(): Locale {
   const fromQuery = new URLSearchParams(window.location.search).get('lang')
   const queryMatch = fromQuery ? matchLocale(fromQuery) : undefined
@@ -59,17 +65,13 @@ function detectLocale(): Locale {
   const saved = localStorage.getItem(STORAGE_KEY)
   if (isLocale(saved)) return saved
 
-  for (const tag of navigator.languages ?? [navigator.language]) {
-    const match = matchLocale(tag)
-    if (match) return match
-  }
   return DEFAULT_LOCALE
 }
 
 export const i18n = createI18n<[MessageSchema], Locale, false>({
   legacy: false,
   locale: detectLocale(),
-  fallbackLocale: DEFAULT_LOCALE,
+  fallbackLocale: FALLBACK_LOCALE,
   messages,
   pluralRules: {
     en: createPluralRule('en'),

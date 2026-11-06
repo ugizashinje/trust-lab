@@ -22,7 +22,6 @@ const CONFIGS = {
       pavlov: 3,
       titForTwoTats: 3,
       prober: 3,
-      random: 3,
     },
     rounds: 10,
     replace: 4,

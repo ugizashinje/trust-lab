@@ -8,14 +8,13 @@ const { t } = useI18n()
 
 const config: SimConfig = {
   population: {
-    alwaysCooperate: 4,
+    alwaysCooperate: 5,
     alwaysDefect: 4,
     titForTat: 4,
     grimTrigger: 3,
     pavlov: 3,
     titForTwoTats: 3,
-    prober: 2,
-    random: 2,
+    prober: 3,
   },
   rounds: 10,
   noise: 0.05,

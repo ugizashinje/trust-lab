@@ -50,7 +50,7 @@
       "desc": "Never shares. Takes whatever it can get."
     },
     "titForTat": {
-      "name": "Mirror",
+      "name": "Monkey",
       "tech": "Tit for Tat",
       "desc": "Shares first, then does whatever you did last round."
     },
@@ -72,12 +72,7 @@
     "prober": {
       "name": "Scout",
       "tech": "Prober",
-      "desc": "Tests you with Keep, Share, Share. If you hit back, it plays fair like the Mirror. If not, it exploits you."
-    },
-    "random": {
-      "name": "Dice",
-      "tech": "Random",
-      "desc": "Flips a coin every round."
+      "desc": "Tests you with Keep, Share, Share. If you hit back, it plays fair like the Monkey. If not, it exploits you."
     }
   },
   "sim": {
@@ -116,7 +111,8 @@
     "kicker": "A 15-minute interactive",
     "title": "Why do strangers trust each other?",
     "lead": "Every day, people cooperate with others they barely know, even when cheating would pay more in the moment. In this lab you will play a simple trading game, pit strategies against each other and watch whole populations evolve.",
-    "start": "Start"
+    "start": "Start",
+    "hint": "Point at or tap a character to hear how it plays."
   },
   "rules": {
     "title": "The deal",
@@ -174,7 +170,7 @@
     "scenarios": {
       "doves": {
         "title": "Doves and Foxes",
-        "desc": "Lots of trusting Doves, a few Foxes and a few Mirrors. The Foxes feast first. Who has the last word?"
+        "desc": "Lots of trusting Doves, a few Foxes and a few Monkeys. The Foxes feast first. Who has the last word?"
       },
       "oneShot": {
         "title": "One-time meetings",
@@ -193,11 +189,11 @@
     "scenarios": {
       "clean": {
         "title": "No mistakes",
-        "desc": "Mirrors, Elephants, Bells and Tortoises live together, with one Fox in the mix."
+        "desc": "Monkeys, Elephants, Bells and Tortoises live together, with one Fox in the mix."
       },
       "noisy": {
         "title": "10% mistakes",
-        "desc": "The same population, but one move in ten goes wrong. A single accident can start an endless feud between two Mirrors, and an Elephant never forgives."
+        "desc": "The same population, but one move in ten goes wrong. A single accident can start an endless feud between two Monkeys, and an Elephant never forgives."
       }
     }
   },

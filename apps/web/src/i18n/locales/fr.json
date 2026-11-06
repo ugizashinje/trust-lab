@@ -50,7 +50,7 @@
       "desc": "Ne partage jamais. Prend tout ce qu’il peut."
     },
     "titForTat": {
-      "name": "Miroir",
+      "name": "Singe",
       "tech": "Donnant-donnant",
       "desc": "Partage d’abord, puis refait ce que vous avez fait au tour précédent."
     },
@@ -72,12 +72,7 @@
     "prober": {
       "name": "Éclaireur",
       "tech": "Sondeur",
-      "desc": "Vous teste avec Garder, Partager, Partager. Si vous ripostez, il joue franc jeu comme le Miroir. Sinon, il vous exploite."
-    },
-    "random": {
-      "name": "Dé",
-      "tech": "Aléatoire",
-      "desc": "Tire à pile ou face à chaque tour."
+      "desc": "Vous teste avec Garder, Partager, Partager. Si vous ripostez, il joue franc jeu comme le Singe. Sinon, il vous exploite."
     }
   },
   "sim": {
@@ -116,7 +111,8 @@
     "kicker": "Une expérience interactive de 15 minutes",
     "title": "Pourquoi des inconnus se font-ils confiance ?",
     "lead": "Chaque jour, nous coopérons avec des gens que nous connaissons à peine, même quand tricher rapporterait davantage sur le moment. Dans ce labo, vous allez jouer à un petit jeu d’échange, opposer des stratégies entre elles et observer l’évolution de populations entières.",
-    "start": "Commencer"
+    "start": "Commencer",
+    "hint": "Pointez ou touchez un personnage pour découvrir sa façon de jouer."
   },
   "rules": {
     "title": "Le marché",
@@ -174,7 +170,7 @@
     "scenarios": {
       "doves": {
         "title": "Colombes et Renards",
-        "desc": "Beaucoup de Colombes confiantes, quelques Renards et quelques Miroirs. Les Renards se régalent d’abord. Qui aura le dernier mot ?"
+        "desc": "Beaucoup de Colombes confiantes, quelques Renards et quelques Singes. Les Renards se régalent d’abord. Qui aura le dernier mot ?"
       },
       "oneShot": {
         "title": "Rencontres uniques",
@@ -193,11 +189,11 @@
     "scenarios": {
       "clean": {
         "title": "Sans erreurs",
-        "desc": "Miroirs, Éléphants, Cloches et Tortues vivent ensemble, avec un Renard parmi eux."
+        "desc": "Singes, Éléphants, Cloches et Tortues vivent ensemble, avec un Renard parmi eux."
       },
       "noisy": {
         "title": "10 % d’erreurs",
-        "desc": "La même population, mais un coup sur dix tourne mal. Un seul accident peut déclencher une querelle sans fin entre deux Miroirs, et un Éléphant ne pardonne jamais."
+        "desc": "La même population, mais un coup sur dix tourne mal. Un seul accident peut déclencher une querelle sans fin entre deux Singes, et un Éléphant ne pardonne jamais."
       }
     }
   },

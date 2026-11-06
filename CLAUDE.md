@@ -21,7 +21,7 @@ game rules there; Vue components only render and drive it.
 ## Commands (run from repo root)
 
 ```bash
-npm run dev            # web dev server (regenerates sr-Latn first)
+npm run dev            # web dev server on :5173, opens the browser, live updates (HMR)
 npm run build          # production build of apps/web → apps/web/dist
 npm test               # unit tests: game-core + web (i18n rules)
 npm run typecheck      # vue-tsc + tsc across all workspaces
@@ -29,6 +29,10 @@ npm run test:e2e -w @trust-lab/web   # Playwright, every locale, desktop + mobil
 npm run db:up && npm run db:migrate  # local Postgres
 npm run dev:api        # API on :3001 (needs apps/api/.env)
 ```
+
+Dev server: `.vue`/`.ts` edits hot-update in place; locale JSON edits trigger a fast
+full reload. Saving `sr-Cyrl.json` regenerates `sr-Latn.json` automatically (plugin
+in `vite.config.ts`, which also keeps the watcher alive on Windows EBUSY errors).
 
 Before finishing a change: `npm test && npm run typecheck && npm run build`.
 For UI changes also run the e2e suite or check in the browser via Playwright MCP.
@@ -51,7 +55,9 @@ For UI changes also run the e2e suite or check in the browser via Playwright MCP
 
 ## Internationalization
 
-Locales: `en` (source of truth), `fr`, `sr-Cyrl` (default Serbian), `sr-Latn`.
+Locales: `sr-Cyrl` (**default language of the app**), `sr-Latn`, `en` (source of
+truth for keys), `fr`. New visitors always start in Serbian Cyrillic; the browser
+language is ignored. Order: `?lang=` → saved choice (localStorage) → `sr-Cyrl`.
 
 - One JSON file per language in `apps/web/src/i18n/locales/`.
 - **`sr-Latn.json` is generated** from `sr-Cyrl.json` by `scripts/gen-sr-latn.mjs`

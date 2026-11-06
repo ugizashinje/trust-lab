@@ -24,7 +24,7 @@ test.describe('play chapter', () => {
     const m = messages('sr-Cyrl')
     await page.getByTestId('play-start').click()
     await page.getByTestId('move-C').click()
-    // First stranger (Mirror) shares in round 1: both shared.
+    // First stranger (Monkey) shares in round 1: both shared.
     await expect(page.getByTestId('round-outcome')).toHaveText(
       msg(m, 'common.outcome.CC').replace('{you}', '3'),
     )
@@ -84,11 +84,15 @@ test.describe('language switcher', () => {
     await expect(page.locator('html')).toHaveAttribute('lang', 'sr-Latn')
   })
 
-  test('a Serbian browser starts in Cyrillic', async ({ browser }) => {
-    const context = await browser.newContext({ locale: 'sr-RS' })
-    const page = await context.newPage()
-    await page.goto('/')
-    await expect(page.locator('html')).toHaveAttribute('lang', 'sr-Cyrl')
-    await context.close()
-  })
+  for (const browserLocale of ['en-US', 'fr-FR', 'sr-RS']) {
+    test(`first visit defaults to Serbian Cyrillic (browser ${browserLocale})`, async ({ browser }) => {
+      const context = await browser.newContext({ locale: browserLocale })
+      const page = await context.newPage()
+      await page.goto('/')
+      await expect(page.locator('html')).toHaveAttribute('lang', 'sr-Cyrl')
+      await expect(page.getByRole('heading', { level: 1 })).toHaveText(msg(messages('sr-Cyrl'), 'home.title'))
+      await expect(page.getByTestId('language-select')).toHaveValue('sr')
+      await context.close()
+    })
+  }
 })
