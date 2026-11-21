@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
+import StrategyAvatar from '@/components/StrategyAvatar.vue'
 import { STRATEGY_IDS, STRATEGY_META } from '@/strategyMeta'
 
 /**
@@ -129,7 +130,7 @@ watch(active, () => nextTick(measure))
         :key="id"
         :ref="(el) => (buttons[i] = el as HTMLElement)"
         type="button"
-        class="grid size-9 cursor-pointer place-items-center rounded-full border-0 text-xl transition-transform duration-300 sm:size-12 sm:text-2xl"
+        class="grid size-9 cursor-pointer place-items-center rounded-full border-0 p-0 transition-transform duration-300 sm:size-12"
         :class="
           i === active
             ? '-translate-y-1.5 scale-110 ring-3 ring-ink ring-offset-2 ring-offset-paper'
@@ -144,13 +145,7 @@ watch(active, () => nextTick(measure))
         @blur="release"
         @click="select(i)"
       >
-        <span
-          class="animate-bob"
-          :style="{ animationDelay: `${i * 0.12}s` }"
-          aria-hidden="true"
-        >
-          {{ STRATEGY_META[id].icon }}
-        </span>
+        <StrategyAvatar :id="id" class="size-full animate-bob" :style="{ animationDelay: `${i * 0.12}s` }" />
         <span class="sr-only">{{ t(`strategies.${id}.name`) }}</span>
       </button>
     </div>

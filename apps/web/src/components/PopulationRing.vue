@@ -54,9 +54,15 @@ const dotR = computed(() => {
           :style="{ transform: `translate(${p.x}px, ${p.y}px)` }"
         >
           <circle :r="dotR" :fill="STRATEGY_META[p.agent.strategy].color" class="stroke-white stroke-2" />
-          <text v-if="dotR >= 10" text-anchor="middle" dominant-baseline="central" :font-size="dotR * 1.05">
-            {{ STRATEGY_META[p.agent.strategy].icon }}
-          </text>
+          <image
+            v-if="dotR >= 8"
+            :href="STRATEGY_META[p.agent.strategy].avatar"
+            :x="-dotR"
+            :y="-dotR"
+            :width="dotR * 2"
+            :height="dotR * 2"
+            class="[clip-path:circle(50%)]"
+          />
           <title>{{ t(`strategies.${p.agent.strategy}.name`) }}</title>
         </g>
       </g>

@@ -45,7 +45,7 @@
       "desc": "Partage à chaque fois, quoi qu’il arrive."
     },
     "alwaysDefect": {
-      "name": "Renard",
+      "name": "Requin",
       "tech": "Toujours trahir",
       "desc": "Ne partage jamais. Prend tout ce qu’il peut."
     },
@@ -70,9 +70,9 @@
       "desc": "Très patiente. Ne riposte qu’après deux trahisons de suite."
     },
     "prober": {
-      "name": "Requin",
+      "name": "Renard",
       "tech": "Sondeur",
-      "desc": "Vous teste avec Garder, Partager, Partager. Si vous ripostez, il joue franc jeu comme le Singe. Sinon, il vous exploite."
+      "desc": "Rusé. Vous teste avec Garder, Partager, Partager. Si vous ripostez, il joue franc jeu comme le Singe. Sinon, il vous exploite."
     }
   },
   "sim": {
@@ -117,7 +117,15 @@
   "rules": {
     "title": "Le marché",
     "intro": "Deux marchands se rencontrent devant un étal. Chacun décide en secret de Partager ou de Garder. Les deux choix sont ensuite révélés en même temps et les points sont distribués.",
-    "tryIt": "Essayez toutes les combinaisons :",
+    "tryIt": "Prenez place à la table. Vous jouez le Singe ; en face de vous, le Renard. Chaque clic est un tour — jouez-en quelques-uns et observez le Renard.",
+    "table": {
+      "round": "Tour {n}",
+      "youAre": "vous",
+      "opponent": "l’autre marchand",
+      "label": "La table du marché avec les deux choix révélés",
+      "prompt": "Que faites-vous ?",
+      "restart": "Recommencer"
+    },
     "matrix": {
       "caption": "Points : vous / l’autre",
       "you": "Vous",
@@ -169,8 +177,8 @@
     "intro": "Les marchés évoluent. Après chaque tournoi, les moins bons s’en vont et les meilleurs amènent chacun un nouveau venu qui joue exactement comme eux. Qu’est-ce qui se répand avec le temps ?",
     "scenarios": {
       "doves": {
-        "title": "Colombes et Renards",
-        "desc": "Beaucoup de Colombes confiantes, quelques Renards et quelques Singes. Les Renards se régalent d’abord. Qui aura le dernier mot ?"
+        "title": "Colombes et Requins",
+        "desc": "Beaucoup de Colombes confiantes, quelques Requins et quelques Singes. Les Requins se régalent d’abord. Qui aura le dernier mot ?"
       },
       "oneShot": {
         "title": "Rencontres uniques",
@@ -189,7 +197,7 @@
     "scenarios": {
       "clean": {
         "title": "Sans erreurs",
-        "desc": "Singes, Éléphants, Chiens et Tortues vivent ensemble, avec un Renard parmi eux."
+        "desc": "Singes, Éléphants, Chiens et Tortues vivent ensemble, avec un Requin parmi eux."
       },
       "noisy": {
         "title": "10 % d’erreurs",

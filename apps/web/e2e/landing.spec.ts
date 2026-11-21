@@ -53,9 +53,9 @@ test('keyboard focus explains a character and holds it', async ({ page, open }) 
 
   await page.getByRole('button', { name: 'Dove', exact: true }).focus()
   await page.keyboard.press('Tab') // real keyboard navigation → :focus-visible
-  const fox = page.getByRole('button', { name: 'Fox', exact: true })
-  await expect(fox).toBeFocused()
-  await expect(fox).toHaveAttribute('aria-pressed', 'true')
+  const shark = page.getByRole('button', { name: 'Shark', exact: true })
+  await expect(shark).toBeFocused()
+  await expect(shark).toHaveAttribute('aria-pressed', 'true')
   await expect(page.getByText('Never shares. Takes whatever it can get.')).toBeVisible()
 
   await page.clock.runFor(ROTATE_MS * 3)
@@ -87,7 +87,7 @@ test('reduced motion: no auto-rotation, still interactive', async ({ page, open 
   await page.clock.runFor(ROTATE_MS * 3)
   await expect(page.getByText('Shares every single time, no matter what.')).toBeVisible()
 
-  await page.getByRole('button', { name: 'Shark', exact: true }).hover()
+  await page.getByRole('button', { name: 'Fox', exact: true }).hover()
   await expect(page.getByText(/Tests you with Keep, Share, Share/)).toBeVisible()
 })
 

@@ -40,6 +40,23 @@ test.describe('rules chapter', () => {
       msg(m, 'common.outcome.DC').replace('{you}', '5').replace('{them}', '0'),
     )
   })
+
+  test('playing the Monkey against the in-character Fox', async ({ open }) => {
+    const page = await open('/rules', 'sr-Cyrl')
+    const m = messages('sr-Cyrl')
+    // Fox opens with Keep…
+    await page.getByTestId('deal-C').click()
+    await expect(page.getByTestId('outcome')).toHaveText(
+      msg(m, 'common.outcome.CD').replace('{you}', '0').replace('{them}', '5'),
+    )
+    // …then shares in round 2.
+    await page.getByTestId('deal-C').click()
+    await expect(page.getByTestId('outcome')).toHaveText(msg(m, 'common.outcome.CC').replace('{you}', '3'))
+    await expect(page.getByTestId('score-monkey')).toHaveText('3')
+    await expect(page.getByTestId('score-fox')).toHaveText('8')
+    await page.getByRole('button', { name: msg(m, 'rules.table.restart') }).click()
+    await expect(page.getByTestId('score-monkey')).toHaveText('0')
+  })
 })
 
 test.describe('simulation', () => {
@@ -60,11 +77,11 @@ test.describe('simulation', () => {
     expect(centers.size).toBe(25)
   })
 
-  test('one-shot meetings let the Foxes take over', async ({ open }) => {
+  test('one-shot meetings let the Sharks take over', async ({ open }) => {
     const page = await open('/evolution', 'en')
     await page.getByRole('tab', { name: 'One-time meetings' }).click()
     await page.getByRole('button', { name: 'Play' }).click()
-    await expect(page.getByTestId('settled')).toHaveText('Only one strategy is left: Fox.', { timeout: 30_000 })
+    await expect(page.getByTestId('settled')).toHaveText('Only one strategy is left: Shark.', { timeout: 30_000 })
   })
 })
 

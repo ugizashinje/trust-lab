@@ -24,6 +24,13 @@ const routes: RouteRecordRaw[] = [
   { path: '/mistakes', name: 'mistakes', component: () => import('./views/MistakesView.vue') },
   { path: '/sandbox', name: 'sandbox', component: () => import('./views/SandboxView.vue') },
   { path: '/end', name: 'end', component: () => import('./views/EndView.vue') },
+  // Dev-only design playground; not part of the production build.
+  ...(import.meta.env.DEV
+    ? [
+        { path: '/lab/reactions', name: 'lab-reactions', component: () => import('./views/lab/ReactionsLab.vue') },
+        { path: '/lab/characters', name: 'lab-characters', component: () => import('./views/lab/CharactersLab.vue') },
+      ]
+    : []),
   { path: '/:pathMatch(.*)*', redirect: '/' },
 ]
 

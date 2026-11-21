@@ -45,7 +45,7 @@
       "desc": "Deli svaki put, šta god da se desi."
     },
     "alwaysDefect": {
-      "name": "Lisica",
+      "name": "Ajkula",
       "tech": "Uvek izdaj",
       "desc": "Nikad ne deli. Uzima sve što može."
     },
@@ -70,9 +70,9 @@
       "desc": "Veoma strpljiva. Uzvraća tek kada je izdate dva puta zaredom."
     },
     "prober": {
-      "name": "Ajkula",
+      "name": "Lisica",
       "tech": "Ispitivač",
-      "desc": "Testira vas sa Zadrži, Podeli, Podeli. Ako uzvratite, igra pošteno kao Majmun. Ako ne, iskorišćava vas."
+      "desc": "Lukava. Testira vas sa Zadrži, Podeli, Podeli. Ako uzvratite, igra pošteno kao Majmun. Ako ne, iskorišćava vas."
     }
   },
   "sim": {
@@ -117,7 +117,15 @@
   "rules": {
     "title": "Dogovor",
     "intro": "Dva trgovca se sretnu kod tezge na pijaci. Svaki od njih u tajnosti odlučuje da li će Podeliti ili Zadržati. Zatim se oba izbora otkrivaju u isto vreme i dele se poeni.",
-    "tryIt": "Isprobajte sve kombinacije:",
+    "tryIt": "Sedite za sto. Vi ste Majmun, a preko puta vas je Lisica. Svaki klik je jedna runda — odigrajte nekoliko i pratite šta Lisica radi.",
+    "table": {
+      "round": "Runda {n}",
+      "youAre": "vi",
+      "opponent": "drugi trgovac",
+      "label": "Trgovački sto sa oba otkrivena izbora",
+      "prompt": "Šta ćete da uradite?",
+      "restart": "Počnite ispočetka"
+    },
     "matrix": {
       "caption": "Poeni: vi / drugi",
       "you": "Vi",
@@ -169,8 +177,8 @@
     "intro": "Tržišta se menjaju. Posle svakog turnira, oni sa najmanje poena odlaze, a najbolji dovode po jednog novajliju koji igra isto kao oni. Šta se širi s vremenom?",
     "scenarios": {
       "doves": {
-        "title": "Golubovi i Lisice",
-        "desc": "Mnogo poverljivih Golubova, nekoliko Lisica i nekoliko Majmuna. Lisice se prvo goste. Ko će imati poslednju reč?"
+        "title": "Golubovi i Ajkule",
+        "desc": "Mnogo poverljivih Golubova, nekoliko Ajkula i nekoliko Majmuna. Ajkule se prvo goste. Ko će imati poslednju reč?"
       },
       "oneShot": {
         "title": "Jednokratni susreti",
@@ -189,7 +197,7 @@
     "scenarios": {
       "clean": {
         "title": "Bez grešaka",
-        "desc": "Majmuni, Slonovi, Psi i Kornjače žive zajedno, uz jednu Lisicu među njima."
+        "desc": "Majmuni, Slonovi, Psi i Kornjače žive zajedno, uz jednu Ajkulu među njima."
       },
       "noisy": {
         "title": "10% grešaka",

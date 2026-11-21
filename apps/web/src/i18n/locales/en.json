@@ -45,7 +45,7 @@
       "desc": "Shares every single time, no matter what."
     },
     "alwaysDefect": {
-      "name": "Fox",
+      "name": "Shark",
       "tech": "Always Defect",
       "desc": "Never shares. Takes whatever it can get."
     },
@@ -70,9 +70,9 @@
       "desc": "Very patient. Only hits back after you betray it twice in a row."
     },
     "prober": {
-      "name": "Shark",
+      "name": "Fox",
       "tech": "Prober",
-      "desc": "Tests you with Keep, Share, Share. If you hit back, it plays fair like the Monkey. If not, it exploits you."
+      "desc": "Cunning. Tests you with Keep, Share, Share. If you hit back, it plays fair like the Monkey. If not, it exploits you."
     }
   },
   "sim": {
@@ -117,7 +117,15 @@
   "rules": {
     "title": "The deal",
     "intro": "Two traders meet at a market stall. Each one secretly decides to Share or Keep. Then both choices are revealed at the same time and points are handed out.",
-    "tryIt": "Try every combination:",
+    "tryIt": "Sit down at the table. You play the Monkey; across from you is the Fox. Each click is one round — play a few and watch what the Fox does.",
+    "table": {
+      "round": "Round {n}",
+      "youAre": "you",
+      "opponent": "the other trader",
+      "label": "The trading table with both revealed choices",
+      "prompt": "What do you do?",
+      "restart": "Start over"
+    },
     "matrix": {
       "caption": "Points: you / them",
       "you": "You",
@@ -169,8 +177,8 @@
     "intro": "Markets change. After every tournament, the lowest scorers leave and the top scorers each bring along a newcomer who plays just like them. What spreads over time?",
     "scenarios": {
       "doves": {
-        "title": "Doves and Foxes",
-        "desc": "Lots of trusting Doves, a few Foxes and a few Monkeys. The Foxes feast first. Who has the last word?"
+        "title": "Doves and Sharks",
+        "desc": "Lots of trusting Doves, a few Sharks and a few Monkeys. The Sharks feast first. Who has the last word?"
       },
       "oneShot": {
         "title": "One-time meetings",
@@ -189,7 +197,7 @@
     "scenarios": {
       "clean": {
         "title": "No mistakes",
-        "desc": "Monkeys, Elephants, Dogs and Tortoises live together, with one Fox in the mix."
+        "desc": "Monkeys, Elephants, Dogs and Tortoises live together, with one Shark in the mix."
       },
       "noisy": {
         "title": "10% mistakes",

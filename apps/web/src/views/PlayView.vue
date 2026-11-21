@@ -3,6 +3,7 @@ import { InteractiveMatch, type Move, type RoundOutcome, type StrategyId } from 
 import { computed, ref, shallowRef, triggerRef } from 'vue'
 import { useI18n } from 'vue-i18n'
 import MoveHistory from '@/components/MoveHistory.vue'
+import StrategyAvatar from '@/components/StrategyAvatar.vue'
 import StrategyBadge from '@/components/StrategyBadge.vue'
 import { submitPlayResult } from '@/services/api'
 
@@ -116,15 +117,18 @@ const lastText = computed(() => {
 
       <div class="mb-4 flex justify-around gap-4">
         <div class="flex flex-col items-center gap-1">
-          <span class="grid size-16 place-items-center rounded-full bg-[#e3efe8] text-3xl" aria-hidden="true">🙂</span>
+          <StrategyAvatar id="titForTat" class="size-16" />
           <span class="text-sm text-muted">{{ t('play.score.you') }}</span>
           <strong class="text-2xl" data-testid="score-you">{{ match.humanScore }}</strong>
         </div>
         <div class="flex flex-col items-center gap-1">
-          <span
-            class="grid size-16 place-items-center rounded-full bg-[#ece6dc] text-3xl font-bold text-muted"
-            aria-hidden="true"
-          >?</span>
+          <!-- Face only: the stranger's name and strategy stay hidden until the reveal. -->
+          <StrategyAvatar
+            :id="opponent.strategy"
+            :key="opponent.strategy"
+            class="size-16 animate-deal"
+            data-testid="stranger-face"
+          />
           <span class="text-sm text-muted">{{ t('play.score.them') }}</span>
           <strong class="text-2xl">{{ match.botScore }}</strong>
         </div>
