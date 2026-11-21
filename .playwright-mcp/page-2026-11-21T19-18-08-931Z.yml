@@ -1,0 +1,36 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Trust Lab" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Chapters" [ref=e10]:
+      - link "Welcome" [ref=e11] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e13]: "1"
+      - link "The deal" [ref=e14] [cursor=pointer]:
+        - /url: /rules
+        - generic [aria-hidden] [ref=e16]: "2"
+      - link "Your turn" [ref=e17] [cursor=pointer]:
+        - /url: /play
+        - generic [aria-hidden] [ref=e19]: "3"
+      - link "Tournament" [ref=e20] [cursor=pointer]:
+        - /url: /tournament
+        - generic [aria-hidden] [ref=e22]: "4"
+      - link "Generations" [ref=e23] [cursor=pointer]:
+        - /url: /evolution
+        - generic [aria-hidden] [ref=e25]: "5"
+      - link "Mistakes" [ref=e26] [cursor=pointer]:
+        - /url: /mistakes
+        - generic [aria-hidden] [ref=e28]: "6"
+      - link "Sandbox" [ref=e29] [cursor=pointer]:
+        - /url: /sandbox
+        - generic [aria-hidden] [ref=e31]: "7"
+      - link "Takeaways" [ref=e32] [cursor=pointer]:
+        - /url: /end
+        - generic [aria-hidden] [ref=e34]: "8"
+    - generic [ref=e36]:
+      - generic [ref=e37]: Language
+      - combobox "Language" [ref=e38]:
+        - option "Српски"
+        - option "English" [selected]
+        - option "Français"
+  - main [ref=e39]

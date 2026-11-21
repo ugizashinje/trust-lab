@@ -1,0 +1,40 @@
+- generic [ref=f10e3]:
+  - banner [ref=f10e4]:
+    - link "Лабораторија поверења" [ref=f10e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Поглавља" [ref=f10e10]:
+      - link "Добродошли" [ref=f10e11] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f10e13]: "1"
+      - link "Договор" [ref=f10e14] [cursor=pointer]:
+        - /url: /rules
+        - generic [aria-hidden] [ref=f10e16]: "2"
+      - link "Ваш ред" [ref=f10e17] [cursor=pointer]:
+        - /url: /play
+        - generic [aria-hidden] [ref=f10e19]: "3"
+      - link "Турнир" [ref=f10e20] [cursor=pointer]:
+        - /url: /tournament
+        - generic [aria-hidden] [ref=f10e22]: "4"
+      - link "Генерације" [ref=f10e23] [cursor=pointer]:
+        - /url: /evolution
+        - generic [aria-hidden] [ref=f10e25]: "5"
+      - link "Грешке" [ref=f10e26] [cursor=pointer]:
+        - /url: /mistakes
+        - generic [aria-hidden] [ref=f10e28]: "6"
+      - link "Песковник" [ref=f10e29] [cursor=pointer]:
+        - /url: /sandbox
+        - generic [aria-hidden] [ref=f10e31]: "7"
+      - link "Закључци" [ref=f10e32] [cursor=pointer]:
+        - /url: /end
+        - generic [aria-hidden] [ref=f10e34]: "8"
+    - generic [ref=f10e35]:
+      - generic [ref=f10e36]:
+        - generic [ref=f10e37]: Језик
+        - combobox "Језик" [ref=f10e38]:
+          - option "Српски" [selected]
+          - option "English"
+          - option "Français"
+      - group "Писмо" [ref=f10e39]:
+        - button "Ћир" [pressed] [ref=f10e40] [cursor=pointer]
+        - button "Lat" [ref=f10e41] [cursor=pointer]
+  - main [ref=f10e42]

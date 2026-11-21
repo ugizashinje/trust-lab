@@ -1,0 +1,336 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e4]:
+    - link "Лабораторија поверења" [ref=f5e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Поглавља" [ref=f5e10]:
+      - link "Добродошли" [ref=f5e11] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f5e13]: "1"
+      - link "Договор" [ref=f5e14] [cursor=pointer]:
+        - /url: /rules
+        - generic [aria-hidden] [ref=f5e16]: "2"
+      - link "Ваш ред" [ref=f5e17] [cursor=pointer]:
+        - /url: /play
+        - generic [aria-hidden] [ref=f5e19]: "3"
+      - link "Турнир" [ref=f5e20] [cursor=pointer]:
+        - /url: /tournament
+        - generic [aria-hidden] [ref=f5e22]: "4"
+      - link "Генерације" [ref=f5e23] [cursor=pointer]:
+        - /url: /evolution
+        - generic [aria-hidden] [ref=f5e25]: "5"
+      - link "Грешке" [ref=f5e26] [cursor=pointer]:
+        - /url: /mistakes
+        - generic [aria-hidden] [ref=f5e28]: "6"
+      - link "Песковник" [ref=f5e29] [cursor=pointer]:
+        - /url: /sandbox
+        - generic [aria-hidden] [ref=f5e31]: "7"
+      - link "Закључци" [ref=f5e32] [cursor=pointer]:
+        - /url: /end
+        - generic [aria-hidden] [ref=f5e34]: "8"
+    - generic [ref=f5e35]:
+      - generic [ref=f5e36]:
+        - generic [ref=f5e37]: Језик
+        - combobox "Језик" [ref=f5e38]:
+          - option "Српски" [selected]
+          - option "English"
+          - option "Français"
+      - group "Писмо" [ref=f5e39]:
+        - button "Ћир" [pressed] [ref=f5e40] [cursor=pointer]
+        - button "Lat" [ref=f5e41] [cursor=pointer]
+  - main [ref=f5e42]:
+    - article [ref=f5e43]:
+      - generic [ref=f5e44]:
+        - text: Design lab · dev only
+        - heading "Monkey & Shark reactions" [level=1] [ref=f5e45]
+        - paragraph [ref=f5e46]:
+          - text: Pick one variant per row (click
+          - emphasis [ref=f5e47]: Pick
+          - text: ). Tell me the IDs, and anything to mix, e.g. “C1 but with C5’s music” — I’ll iterate and then build the winners into the table on page 2.
+      - generic [ref=f5e48]:
+        - generic [ref=f5e49]:
+          - checkbox "Loop" [checked] [ref=f5e50]
+          - text: Loop
+        - generic [ref=f5e51]:
+          - text: Speed
+          - slider "Speed 1×" [ref=f5e52]: "1"
+          - generic [ref=f5e53]: 1×
+        - button "↻ Replay all" [ref=f5e54] [cursor=pointer]
+        - generic [ref=f5e55]:
+          - strong [ref=f5e56]: "Picks:"
+          - text: "cheer: — · betray: — · glare: —"
+      - generic [ref=f5e57]:
+        - generic [ref=f5e59]:
+          - heading "Both share → both cheer" [level=2] [ref=f5e60]
+          - paragraph [ref=f5e61]: Share / Share — each gets 3
+        - generic [ref=f5e62]:
+          - generic [ref=f5e63]:
+            - strong [ref=f5e65]: C1 · Jump + confetti
+            - generic [ref=f5e66]:
+              - generic [aria-hidden] [ref=f5e70]: 🐒
+              - generic [aria-hidden] [ref=f5e74]: 🦈
+              - generic [ref=f5e75]:
+                - generic [ref=f5e76]: ✓
+                - generic [ref=f5e77]: ✓
+            - paragraph [ref=f5e78]: Bouncy hops, confetti burst from each head.
+            - button "Pick" [ref=f5e79] [cursor=pointer]
+          - generic [ref=f5e80]:
+            - strong [ref=f5e82]: C2 · Wiggle dance + sparkles
+            - generic [ref=f5e83]:
+              - generic [ref=f5e85]:
+                - generic [aria-hidden] [ref=f5e87]: 🐒
+                - generic: ✨
+                - generic: ✨
+                - generic: ✨
+                - generic: ✨
+              - generic [ref=f5e89]:
+                - generic [aria-hidden] [ref=f5e91]: 🦈
+                - generic: ✨
+                - generic: ✨
+                - generic: ✨
+                - generic: ✨
+              - generic [ref=f5e92]:
+                - generic [ref=f5e93]: ✓
+                - generic [ref=f5e94]: ✓
+            - paragraph [ref=f5e95]: Side-to-side dance with twinkling stars.
+            - button "Pick" [ref=f5e96] [cursor=pointer]
+          - generic [ref=f5e97]:
+            - strong [ref=f5e99]: C3 · Spin jump + party badge
+            - generic [ref=f5e100]:
+              - generic [ref=f5e102]:
+                - generic [aria-hidden] [ref=f5e104]: 🐒
+                - generic: 🎉
+              - generic [ref=f5e106]:
+                - generic [aria-hidden] [ref=f5e108]: 🦈
+                - generic: 🎉
+              - generic [ref=f5e109]:
+                - generic [ref=f5e110]: ✓
+                - generic [ref=f5e111]: ✓
+            - paragraph [ref=f5e112]: A full twirl in the air, 🎉 pops above.
+            - button "Pick" [ref=f5e113] [cursor=pointer]
+          - generic [ref=f5e114]:
+            - strong [ref=f5e116]: C4 · High five over the table
+            - generic [ref=f5e117]:
+              - generic [aria-hidden] [ref=f5e121]: 🐒
+              - generic [aria-hidden] [ref=f5e125]: 🦈
+              - generic [ref=f5e126]:
+                - generic [ref=f5e127]: ✓
+                - generic [ref=f5e128]: ✓
+                - generic: 🙌
+            - paragraph [ref=f5e129]: Both lean in, 🙌 flashes in the middle.
+            - button "Pick" [ref=f5e130] [cursor=pointer]
+          - generic [ref=f5e131]:
+            - strong [ref=f5e133]: C5 · Golden glow + music
+            - generic [ref=f5e134]:
+              - generic [ref=f5e136]:
+                - generic [aria-hidden] [ref=f5e138]: 🐒
+                - generic [ref=f5e139]: 🎵
+                - generic [ref=f5e140]: 🎶
+                - generic [ref=f5e141]: 🎵
+              - generic [ref=f5e143]:
+                - generic [aria-hidden] [ref=f5e145]: 🦈
+                - generic [ref=f5e146]: 🎵
+                - generic [ref=f5e147]: 🎶
+                - generic [ref=f5e148]: 🎵
+              - generic [ref=f5e149]:
+                - generic [ref=f5e150]: ✓
+                - generic [ref=f5e151]: ✓
+            - paragraph [ref=f5e152]: Warm glow ring and floating notes. Calm, friendly.
+            - button "Pick" [ref=f5e153] [cursor=pointer]
+          - generic [ref=f5e154]:
+            - strong [ref=f5e156]: C6 · Coin shower
+            - generic [ref=f5e157]:
+              - generic [aria-hidden] [ref=f5e161]: 🐒
+              - generic [aria-hidden] [ref=f5e165]: 🦈
+              - generic [ref=f5e166]:
+                - generic [ref=f5e167]: ✓
+                - generic [ref=f5e168]: ✓
+                - generic [ref=f5e169]: 🪙
+                - generic [ref=f5e170]: 🪙
+                - generic [ref=f5e171]: 🪙
+                - generic [ref=f5e172]: 🪙
+                - generic [ref=f5e173]: 🪙
+                - generic [ref=f5e174]: 🪙
+                - generic [ref=f5e175]: 🪙
+                - generic [ref=f5e176]: 🪙
+            - paragraph [ref=f5e177]: Coins pop out of the table toward both. Ties to “points”.
+            - button "Pick" [ref=f5e178] [cursor=pointer]
+      - generic [ref=f5e179]:
+        - generic [ref=f5e180]:
+          - generic [ref=f5e181]:
+            - heading "One shares, one keeps → cry vs evil smile" [level=2] [ref=f5e182]
+            - paragraph [ref=f5e183]: Sharer gets 0, keeper gets 5
+          - group "Who shared" [ref=f5e184]:
+            - button "🐒 shared, 🦈 kept" [pressed] [ref=f5e185] [cursor=pointer]
+            - button "🦈 shared, 🐒 kept" [ref=f5e186] [cursor=pointer]
+        - generic [ref=f5e187]:
+          - generic [ref=f5e188]:
+            - strong [ref=f5e190]: S1 · Teardrops vs devil laugh
+            - generic [ref=f5e191]:
+              - generic [ref=f5e193]:
+                - generic [aria-hidden] [ref=f5e195]: 🐒
+                - generic [ref=f5e196]: 💧
+                - generic [ref=f5e197]: 💧
+                - generic [ref=f5e198]: 💧
+              - generic [ref=f5e200]:
+                - generic [aria-hidden] [ref=f5e202]: 🦈
+                - generic: 😈
+              - generic [ref=f5e203]:
+                - generic [ref=f5e204]: ✓
+                - generic [ref=f5e205]: ✕
+            - paragraph [ref=f5e206]: Drops fall, sharer droops. Keeper rocks with laughter, 😈 badge.
+            - button "Pick" [ref=f5e207] [cursor=pointer]
+          - generic [ref=f5e208]:
+            - strong [ref=f5e210]: S2 · Rain cloud vs horns
+            - generic [ref=f5e211]:
+              - generic [ref=f5e213]:
+                - generic [aria-hidden] [ref=f5e215]: 🐒
+                - generic [ref=f5e216]: ☁️
+                - generic [ref=f5e217]: 💧
+                - generic [ref=f5e218]: 💧
+                - generic [ref=f5e219]: 💧
+              - generic [aria-hidden] [ref=f5e223]: 🦈
+              - generic [ref=f5e224]:
+                - generic [ref=f5e225]: ✓
+                - generic [ref=f5e226]: ✕
+            - paragraph [ref=f5e227]: Personal rain cloud over the sharer. Little red horns grow on the keeper.
+            - button "Pick" [ref=f5e228] [cursor=pointer]
+          - generic [ref=f5e229]:
+            - strong [ref=f5e231]: S3 · Sobbing vs tooth sparkle
+            - generic [ref=f5e232]:
+              - generic [ref=f5e234]:
+                - generic [aria-hidden] [ref=f5e236]: 🐒
+                - generic: 😭
+              - generic [ref=f5e239]:
+                - generic [aria-hidden] [ref=f5e240]: 🦈
+                - generic: ✨
+              - generic [ref=f5e241]:
+                - generic [ref=f5e242]: ✓
+                - generic [ref=f5e243]: ✕
+            - paragraph [ref=f5e244]: 😭 badge + shaking shoulders. Keeper lifts chin, ✨ glints.
+            - button "Pick" [ref=f5e245] [cursor=pointer]
+          - generic [ref=f5e246]:
+            - strong [ref=f5e248]: S4 · Coins change hands
+            - generic [ref=f5e249]:
+              - generic [aria-hidden] [ref=f5e253]: 🐒
+              - generic [ref=f5e255]:
+                - generic [aria-hidden] [ref=f5e257]: 🦈
+                - generic: 💰
+              - generic [ref=f5e258]:
+                - generic [ref=f5e259]: ✓
+                - generic [ref=f5e260]: ✕
+                - generic [ref=f5e261]: 🪙
+                - generic [ref=f5e262]: 🪙
+                - generic [ref=f5e263]: 🪙
+                - generic [ref=f5e264]: 🪙
+                - generic [ref=f5e265]: 🪙
+            - paragraph [ref=f5e266]: Coins slide from sharer to keeper. Sharer shrinks; keeper gloats with 💰.
+            - button "Pick" [ref=f5e267] [cursor=pointer]
+          - generic [ref=f5e268]:
+            - strong [ref=f5e270]: S5 · Tear streams vs red aura
+            - generic [ref=f5e271]:
+              - generic [aria-hidden] [ref=f5e275]: 🐒
+              - generic [ref=f5e277]:
+                - generic [aria-hidden] [ref=f5e279]: 🦈
+                - generic: 😏
+              - generic [ref=f5e280]:
+                - generic [ref=f5e281]: ✓
+                - generic [ref=f5e282]: ✕
+            - paragraph [ref=f5e283]: Cartoon tear rivers. Keeper pulses a red glow with 😏.
+            - button "Pick" [ref=f5e284] [cursor=pointer]
+          - generic [ref=f5e285]:
+            - strong [ref=f5e287]: "S6 · Minimal: badges only"
+            - generic [ref=f5e288]:
+              - generic [ref=f5e290]:
+                - generic [aria-hidden] [ref=f5e292]: 🐒
+                - generic [ref=f5e293]: 😢
+              - generic [ref=f5e295]:
+                - generic [aria-hidden] [ref=f5e297]: 🦈
+                - generic [ref=f5e298]: 😈
+              - generic [ref=f5e299]:
+                - generic [ref=f5e300]: ✓
+                - generic [ref=f5e301]: ✕
+            - paragraph [ref=f5e302]: No body motion, just 😢 and 😈 popping. Quietest option.
+            - button "Pick" [ref=f5e303] [cursor=pointer]
+      - generic [ref=f5e304]:
+        - generic [ref=f5e306]:
+          - heading "Both keep → evil eye" [level=2] [ref=f5e307]
+          - paragraph [ref=f5e308]: Keep / Keep — each gets 1
+        - generic [ref=f5e309]:
+          - generic [ref=f5e310]:
+            - strong [ref=f5e312]: E1 · Lean in + lightning
+            - generic [ref=f5e313]:
+              - generic [aria-hidden] [ref=f5e317]: 🐒
+              - generic [aria-hidden] [ref=f5e321]: 🦈
+              - generic [ref=f5e322]:
+                - generic [ref=f5e323]: ✕
+                - generic [ref=f5e324]: ✕
+                - generic [ref=f5e325]: ⚡
+            - paragraph [ref=f5e326]: Both lean toward each other, ⚡ crackles between them.
+            - button "Pick" [ref=f5e327] [cursor=pointer]
+          - generic [ref=f5e328]:
+            - strong [ref=f5e330]: E2 · Squinting eyes
+            - generic [ref=f5e331]:
+              - generic [ref=f5e334]:
+                - generic [aria-hidden] [ref=f5e335]: 🐒
+                - generic [ref=f5e336]: 👁️
+              - generic [ref=f5e339]:
+                - generic [aria-hidden] [ref=f5e340]: 🦈
+                - generic [ref=f5e341]: 👁️
+              - generic [ref=f5e342]:
+                - generic [ref=f5e343]: ✕
+                - generic [ref=f5e344]: ✕
+            - paragraph [ref=f5e345]: A narrowing 👁️ over each, slow suspicious pulse.
+            - button "Pick" [ref=f5e346] [cursor=pointer]
+          - generic [ref=f5e347]:
+            - strong [ref=f5e349]: E3 · Anger marks + tremble
+            - generic [ref=f5e350]:
+              - generic [ref=f5e352]:
+                - generic [aria-hidden] [ref=f5e354]: 🐒
+                - generic [ref=f5e355]: 💢
+              - generic [ref=f5e357]:
+                - generic [aria-hidden] [ref=f5e359]: 🦈
+                - generic [ref=f5e360]: 💢
+              - generic [ref=f5e361]:
+                - generic [ref=f5e362]: ✕
+                - generic [ref=f5e363]: ✕
+            - paragraph [ref=f5e364]: 💢 throbs, both shake with rage.
+            - button "Pick" [ref=f5e365] [cursor=pointer]
+          - generic [ref=f5e366]:
+            - strong [ref=f5e368]: E4 · Laser stare
+            - generic [ref=f5e369]:
+              - generic [aria-hidden] [ref=f5e373]: 🐒
+              - generic [aria-hidden] [ref=f5e377]: 🦈
+              - generic [ref=f5e378]:
+                - generic [ref=f5e379]: ✕
+                - generic [ref=f5e380]: ✕
+                - generic: 💥
+            - paragraph [ref=f5e381]: Red beams meet over the table and spark.
+            - button "Pick" [ref=f5e382] [cursor=pointer]
+          - generic [ref=f5e383]:
+            - strong [ref=f5e385]: E5 · Storm at the table
+            - generic [ref=f5e386]:
+              - generic [ref=f5e388]:
+                - generic [aria-hidden] [ref=f5e390]: 🐒
+                - generic: 😒
+              - generic [ref=f5e392]:
+                - generic [aria-hidden] [ref=f5e394]: 🦈
+                - generic: 😒
+              - generic [ref=f5e395]:
+                - generic [ref=f5e396]: ✕
+                - generic [ref=f5e397]: ✕
+            - paragraph [ref=f5e398]: Scene darkens, both go 😒 and slowly slide-glare.
+            - button "Pick" [ref=f5e399] [cursor=pointer]
+          - generic [ref=f5e400]:
+            - strong [ref=f5e402]: E6 · Side-eye
+            - generic [ref=f5e403]:
+              - generic [ref=f5e405]:
+                - generic [aria-hidden] [ref=f5e407]: 🐒
+                - generic [ref=f5e408]: 👀
+              - generic [ref=f5e410]:
+                - generic [aria-hidden] [ref=f5e412]: 🦈
+                - generic [ref=f5e413]: 👀
+              - generic [ref=f5e414]:
+                - generic [ref=f5e415]: ✕
+                - generic [ref=f5e416]: ✕
+            - paragraph [ref=f5e417]: Turn away, then a quick 👀 glance back. Passive-aggressive.
+            - button "Pick" [ref=f5e418] [cursor=pointer]

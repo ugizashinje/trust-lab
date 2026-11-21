@@ -1,0 +1,73 @@
+- generic [ref=f14e3]:
+  - banner [ref=f14e4]:
+    - link "Лабораторија поверења" [ref=f14e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Поглавља" [ref=f14e10]:
+      - link "Добродошли" [ref=f14e11] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f14e13]: "1"
+      - link "Договор" [ref=f14e14] [cursor=pointer]:
+        - /url: /rules
+        - generic [aria-hidden] [ref=f14e16]: "2"
+      - link "Ваш ред" [ref=f14e17] [cursor=pointer]:
+        - /url: /play
+        - generic [aria-hidden] [ref=f14e19]: "3"
+      - link "Турнир" [ref=f14e20] [cursor=pointer]:
+        - /url: /tournament
+        - generic [aria-hidden] [ref=f14e22]: "4"
+      - link "Генерације" [ref=f14e23] [cursor=pointer]:
+        - /url: /evolution
+        - generic [aria-hidden] [ref=f14e25]: "5"
+      - link "Грешке" [ref=f14e26] [cursor=pointer]:
+        - /url: /mistakes
+        - generic [aria-hidden] [ref=f14e28]: "6"
+      - link "Песковник" [ref=f14e29] [cursor=pointer]:
+        - /url: /sandbox
+        - generic [aria-hidden] [ref=f14e31]: "7"
+      - link "Закључци" [ref=f14e32] [cursor=pointer]:
+        - /url: /end
+        - generic [aria-hidden] [ref=f14e34]: "8"
+    - generic [ref=f14e35]:
+      - generic [ref=f14e36]:
+        - generic [ref=f14e37]: Језик
+        - combobox "Језик" [ref=f14e38]:
+          - option "Српски" [selected]
+          - option "English"
+          - option "Français"
+      - group "Писмо" [ref=f14e39]:
+        - button "Ћир" [pressed] [ref=f14e40] [cursor=pointer]
+        - button "Lat" [ref=f14e41] [cursor=pointer]
+  - main [ref=f14e42]:
+    - article [ref=f14e43]:
+      - generic [ref=f14e44]:
+        - text: Design lab · dev only
+        - heading "Drawn characters" [level=1] [ref=f14e45]
+        - paragraph [ref=f14e46]: Original anime-action Monkey and Shark. One mood per reaction on the table.
+      - generic [ref=f14e47]:
+        - generic [ref=f14e48]:
+          - checkbox "Aura" [ref=f14e49]
+          - text: Aura
+        - generic [ref=f14e50]:
+          - checkbox "Colour disc" [checked] [ref=f14e51]
+          - text: Colour disc
+        - generic [ref=f14e52]:
+          - text: Size
+          - slider "Size 176px" [ref=f14e53]: "176"
+          - generic [ref=f14e54]: 176px
+      - heading "Face-off (in context)" [level=2] [ref=f14e56]
+      - generic [ref=f14e107]:
+        - heading "Monkey" [level=2] [ref=f14e108]
+        - generic [ref=f14e109]:
+          - figure "idle" [ref=f14e110]
+          - figure "happy" [ref=f14e140]
+          - figure "sad" [ref=f14e165]
+          - figure "smug" [ref=f14e196]
+          - figure "angry" [ref=f14e225]
+      - generic [ref=f14e253]:
+        - heading "Shark" [level=2] [ref=f14e254]
+        - generic [ref=f14e255]:
+          - figure "idle" [ref=f14e256]
+          - figure "happy" [ref=f14e278]
+          - figure "sad" [ref=f14e298]
+          - figure "smug" [ref=f14e319]
+          - figure "angry" [ref=f14e340]

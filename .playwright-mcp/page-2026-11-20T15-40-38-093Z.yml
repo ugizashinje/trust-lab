@@ -1,0 +1,124 @@
+- generic [ref=f10e3]:
+  - banner [ref=f10e4]:
+    - link "Лабораторија поверења" [ref=f10e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Поглавља" [ref=f10e10]:
+      - link "Добродошли" [ref=f10e11] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f10e13]: "1"
+      - link "Договор" [ref=f10e14] [cursor=pointer]:
+        - /url: /rules
+        - generic [aria-hidden] [ref=f10e16]: "2"
+      - link "Ваш ред" [ref=f10e17] [cursor=pointer]:
+        - /url: /play
+        - generic [aria-hidden] [ref=f10e19]: "3"
+      - link "Турнир" [ref=f10e20] [cursor=pointer]:
+        - /url: /tournament
+        - generic [aria-hidden] [ref=f10e22]: "4"
+      - link "Генерације" [ref=f10e23] [cursor=pointer]:
+        - /url: /evolution
+        - generic [aria-hidden] [ref=f10e25]: "5"
+      - link "Грешке" [ref=f10e26] [cursor=pointer]:
+        - /url: /mistakes
+        - generic [aria-hidden] [ref=f10e28]: "6"
+      - link "Песковник" [ref=f10e29] [cursor=pointer]:
+        - /url: /sandbox
+        - generic [aria-hidden] [ref=f10e31]: "7"
+      - link "Закључци" [ref=f10e32] [cursor=pointer]:
+        - /url: /end
+        - generic [aria-hidden] [ref=f10e34]: "8"
+    - generic [ref=f10e35]:
+      - generic [ref=f10e36]:
+        - generic [ref=f10e37]: Језик
+        - combobox "Језик" [ref=f10e38]:
+          - option "Српски" [selected]
+          - option "English"
+          - option "Français"
+      - group "Писмо" [ref=f10e39]:
+        - button "Ћир" [pressed] [ref=f10e40] [cursor=pointer]
+        - button "Lat" [ref=f10e41] [cursor=pointer]
+  - main [ref=f10e42]:
+    - article [ref=f10e43]:
+      - heading "Договор" [level=1] [ref=f10e44]
+      - paragraph [ref=f10e45]: Два трговца се сретну код тезге на пијаци. Сваки од њих у тајности одлучује да ли ће Поделити или Задржати. Затим се оба избора откривају у исто време и деле се поени.
+      - generic [ref=f10e46]:
+        - paragraph [ref=f10e47]: Седите за сто. Ви сте Мајмун, а преко пута вас је Ајкула. Сваки клик је једна рунда — одиграјте неколико и пратите шта Ајкула ради.
+        - generic [ref=f10e48]:
+          - generic [ref=f10e49]:
+            - generic [ref=f10e50]: Рунда 5
+            - button "Почните испочетка" [ref=f10e51] [cursor=pointer]
+          - generic [ref=f10e52]:
+            - generic [ref=f10e53]:
+              - generic [aria-hidden] [ref=f10e138]: 🐒
+              - strong [ref=f10e56]: Мајмун
+              - generic [ref=f10e57]: ви
+              - strong [ref=f10e58]: "7"
+            - generic [ref=f10e59]:
+              - generic [aria-hidden] [ref=f10e139]: 🦈
+              - strong [ref=f10e63]: Ајкула
+              - generic [ref=f10e64]: други трговац
+              - strong [ref=f10e65]: "12"
+            - img "Трговачки сто са оба откривена избора" [ref=f10e66]:
+              - generic [aria-hidden] [ref=f10e140]: ✕
+              - generic [aria-hidden] [ref=f10e141]: ✕
+          - generic [ref=f10e69]:
+            - paragraph [ref=f10e70]: Шта ћете да урадите?
+            - generic [ref=f10e71]:
+              - button "Подели" [ref=f10e72] [cursor=pointer]
+              - button "Задржи" [active] [ref=f10e73] [cursor=pointer]
+          - generic [ref=f10e74]:
+            - generic [ref=f10e75]:
+              - generic [ref=f10e76]: Мајмун
+              - list [ref=f10e77]:
+                - listitem "Подели" [ref=f10e78]:
+                  - generic [aria-hidden] [ref=f10e79]: ✓
+                - listitem "Подели" [ref=f10e122]:
+                  - generic [aria-hidden] [ref=f10e123]: ✓
+                - listitem "Подели" [ref=f10e132]:
+                  - generic [aria-hidden] [ref=f10e133]: ✓
+                - listitem "Задржи" [ref=f10e142]:
+                  - generic [aria-hidden] [ref=f10e143]: ✕
+            - generic [ref=f10e81]:
+              - generic [ref=f10e82]: Ајкула
+              - list [ref=f10e83]:
+                - listitem "Задржи" [ref=f10e84]:
+                  - generic [aria-hidden] [ref=f10e85]: ✕
+                - listitem "Подели" [ref=f10e125]:
+                  - generic [aria-hidden] [ref=f10e126]: ✓
+                - listitem "Подели" [ref=f10e135]:
+                  - generic [aria-hidden] [ref=f10e136]: ✓
+                - listitem "Задржи" [ref=f10e145]:
+                  - generic [aria-hidden] [ref=f10e146]: ✕
+        - paragraph [ref=f10e87]: Обоје сте задржали. Свако добија 1.
+        - separator [ref=f10e88]
+        - 'table "Поени: ви / други" [ref=f10e89]':
+          - caption [ref=f10e90]: "Поени: ви / други"
+          - rowgroup [ref=f10e91]:
+            - row [ref=f10e92]:
+              - columnheader "Ви ↓ Други трговац →" [ref=f10e93]:
+                - generic [ref=f10e94]: Ви ↓
+                - generic [ref=f10e95]: Други трговац →
+              - columnheader "Подели" [ref=f10e96]
+              - columnheader "Задржи" [ref=f10e97]
+          - rowgroup [ref=f10e98]:
+            - row [ref=f10e99]:
+              - rowheader "Подели" [ref=f10e100]
+              - cell [ref=f10e101]:
+                - button "3/3" [ref=f10e102] [cursor=pointer]
+              - cell [ref=f10e103]:
+                - button "0/5" [ref=f10e104] [cursor=pointer]
+            - row [ref=f10e105]:
+              - rowheader "Задржи" [ref=f10e106]
+              - cell [ref=f10e107]:
+                - button "5/0" [ref=f10e108] [cursor=pointer]
+              - cell [ref=f10e109]:
+                - button "1/1" [pressed] [ref=f10e110] [cursor=pointer]
+      - generic [ref=f10e111]:
+        - heading "Замка" [level=2] [ref=f10e112]
+        - paragraph [ref=f10e113]: "Шта год други трговац урадио, задржавање вам доноси више: 5 уместо 3 ако он подели, 1 уместо 0 ако он задржи. Али ако обоје размишљате тако, свако одлази са 1 уместо са 3."
+        - paragraph [ref=f10e114]: Да ли је онда дељење наивно? Хајде да сазнамо.
+  - navigation [ref=f10e115]:
+    - link "← Добродошли" [ref=f10e116] [cursor=pointer]:
+      - /url: /
+    - link "Ваш ред →" [ref=f10e117] [cursor=pointer]:
+      - /url: /play

@@ -1,0 +1,97 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Лабораторија поверења" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Поглавља" [ref=e10]:
+      - link "Добродошли" [ref=e11] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e13]: "1"
+      - link "Договор" [ref=e14] [cursor=pointer]:
+        - /url: /rules
+        - generic [aria-hidden] [ref=e16]: "2"
+      - link "Ваш ред" [ref=e17] [cursor=pointer]:
+        - /url: /play
+        - generic [aria-hidden] [ref=e19]: "3"
+      - link "Турнир" [ref=e20] [cursor=pointer]:
+        - /url: /tournament
+        - generic [aria-hidden] [ref=e22]: "4"
+      - link "Генерације" [ref=e23] [cursor=pointer]:
+        - /url: /evolution
+        - generic [aria-hidden] [ref=e25]: "5"
+      - link "Грешке" [ref=e26] [cursor=pointer]:
+        - /url: /mistakes
+        - generic [aria-hidden] [ref=e28]: "6"
+      - link "Песковник" [ref=e29] [cursor=pointer]:
+        - /url: /sandbox
+        - generic [aria-hidden] [ref=e31]: "7"
+      - link "Закључци" [ref=e32] [cursor=pointer]:
+        - /url: /end
+        - generic [aria-hidden] [ref=e34]: "8"
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: Језик
+        - combobox "Језик" [ref=e38]:
+          - option "Српски" [selected]
+          - option "English"
+          - option "Français"
+      - group "Писмо" [ref=e39]:
+        - button "Ћир" [pressed] [ref=e40] [cursor=pointer]
+        - button "Lat" [ref=e41] [cursor=pointer]
+  - main [ref=e42]:
+    - article [ref=e43]:
+      - heading "Договор" [level=1] [ref=e44]
+      - paragraph [ref=e45]: Два трговца се сретну код тезге на пијаци. Сваки од њих у тајности одлучује да ли ће Поделити или Задржати. Затим се оба избора откривају у исто време и деле се поени.
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: Седите за сто. Ви сте Мајмун, а преко пута вас је Ајкула. Сваки клик је једна рунда — одиграјте неколико и пратите шта Ајкула ради.
+        - generic [ref=e48]:
+          - generic [ref=e49]: Рунда 1
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - generic [aria-hidden] [ref=e53]: 🐒
+              - strong [ref=e54]: Мајмун
+              - generic [ref=e55]: ви
+              - strong [ref=e56]: "0"
+            - img "Трговачки сто са оба откривена избора" [ref=e57]
+            - generic [ref=e58]:
+              - generic [aria-hidden] [ref=e59]: 🦈
+              - strong [ref=e60]: Ајкула
+              - generic [ref=e61]: други трговац
+              - strong [ref=e62]: "0"
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: Шта ћете да урадите?
+            - generic [ref=e65]:
+              - button "Подели" [ref=e66] [cursor=pointer]
+              - button "Задржи" [ref=e67] [cursor=pointer]
+        - paragraph [ref=e68]
+        - separator [ref=e69]
+        - 'table "Поени: ви / други" [ref=e70]':
+          - caption [ref=e71]: "Поени: ви / други"
+          - rowgroup [ref=e72]:
+            - row [ref=e73]:
+              - columnheader "Ви ↓ Други трговац →" [ref=e74]:
+                - generic [ref=e75]: Ви ↓
+                - generic [ref=e76]: Други трговац →
+              - columnheader "Подели" [ref=e77]
+              - columnheader "Задржи" [ref=e78]
+          - rowgroup [ref=e79]:
+            - row [ref=e80]:
+              - rowheader "Подели" [ref=e81]
+              - cell [ref=e82]:
+                - button "3/3" [ref=e83] [cursor=pointer]
+              - cell [ref=e84]:
+                - button "0/5" [ref=e85] [cursor=pointer]
+            - row [ref=e86]:
+              - rowheader "Задржи" [ref=e87]
+              - cell [ref=e88]:
+                - button "5/0" [ref=e89] [cursor=pointer]
+              - cell [ref=e90]:
+                - button "1/1" [ref=e91] [cursor=pointer]
+      - generic [ref=e92]:
+        - heading "Замка" [level=2] [ref=e93]
+        - paragraph [ref=e94]: "Шта год други трговац урадио, задржавање вам доноси више: 5 уместо 3 ако он подели, 1 уместо 0 ако он задржи. Али ако обоје размишљате тако, свако одлази са 1 уместо са 3."
+        - paragraph [ref=e95]: Да ли је онда дељење наивно? Хајде да сазнамо.
+  - navigation [ref=e96]:
+    - link "← Добродошли" [ref=e97] [cursor=pointer]:
+      - /url: /
+    - link "Ваш ред →" [ref=e98] [cursor=pointer]:
+      - /url: /play
