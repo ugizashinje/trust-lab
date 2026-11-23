@@ -34,6 +34,7 @@ const NAMESPACES = [
   'mistakes',
   'sandbox',
   'end',
+  'kids',
 ]
 const PLURAL_FORMS: Record<string, number> = { en: 2, fr: 2, 'sr-Cyrl': 3, 'sr-Latn': 3 }
 /** Latin words allowed inside Serbian Cyrillic text (titles, brand names). */

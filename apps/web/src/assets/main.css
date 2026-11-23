@@ -21,6 +21,14 @@
   --color-table: #d8b98e;
   --color-table-edge: #a87c4f;
 
+  /* Theme colours for the kids' games page. */
+  --color-kids-think: #7c5cd6;
+  --color-kids-coop: #2f9e6e;
+  --color-kids-team: #2b8fc4;
+  --color-kids-luck: #d9692a;
+  --color-kids-nature: #3e7d4f;
+  --color-kids-trust: #c9466a;
+
   /* System stacks with full Latin + Cyrillic coverage on every major OS. */
   --font-sans: 'Segoe UI', system-ui, -apple-system, 'Noto Sans', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;

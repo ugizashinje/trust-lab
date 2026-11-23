@@ -24,6 +24,8 @@ const routes: RouteRecordRaw[] = [
   { path: '/mistakes', name: 'mistakes', component: () => import('./views/MistakesView.vue') },
   { path: '/sandbox', name: 'sandbox', component: () => import('./views/SandboxView.vue') },
   { path: '/end', name: 'end', component: () => import('./views/EndView.vue') },
+  // Side page (not a chapter): classroom games built on game theory ideas.
+  { path: '/games', name: 'kids', component: () => import('./views/KidsGamesView.vue') },
   // Dev-only design playground; not part of the production build.
   ...(import.meta.env.DEV
     ? [

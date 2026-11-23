@@ -14,5 +14,8 @@ const { t } = useI18n()
     <RouterLink :to="{ name: 'rules' }" class="btn btn-primary btn-lg" data-testid="start">
       {{ t('home.start') }} →
     </RouterLink>
+    <p class="mt-6">
+      <RouterLink :to="{ name: 'kids' }" class="text-accent">🎲 {{ t('kids.link') }}</RouterLink>
+    </p>
   </section>
 </template>

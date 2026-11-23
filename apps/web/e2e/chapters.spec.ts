@@ -9,6 +9,7 @@ const CHAPTERS = [
   { path: '/mistakes', title: 'mistakes.title' },
   { path: '/sandbox', title: 'sandbox.title' },
   { path: '/end', title: 'end.title' },
+  { path: '/games', title: 'kids.title' },
 ]
 
 for (const locale of LOCALES) {
