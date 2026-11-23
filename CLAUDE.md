@@ -66,7 +66,7 @@ language is ignored. Order: `?lang=` → saved choice (localStorage) → `sr-Cyr
   `LATIN_ALLOWED` in `locales.test.ts`.
 - Key structure rules (enforced by `src/i18n/locales.test.ts`):
   - Top-level keys are namespaces that will later become separate files:
-    `common, strategies, sim, home, rules, play, tournament, evolution, mistakes, sandbox, end`.
+    `common, strategies, sim, home, rules, play, tournament, evolution, mistakes, sandbox, end, kids`.
   - Below that, organize semantically. **Max 4 levels** including the namespace.
   - Leaves are always strings (no arrays/numbers).
   - Keys are English identifiers (`play.match.prompt`), never English sentences.

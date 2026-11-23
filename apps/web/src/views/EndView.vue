@@ -23,6 +23,7 @@ const LESSONS = ['future', 'winwin', 'forgive'] as const
         {{ t('common.chapters.sandbox') }}
       </RouterLink>
       <RouterLink :to="{ name: 'home' }" class="btn">{{ t('common.nav.restart') }}</RouterLink>
+      <RouterLink :to="{ name: 'kids' }" class="btn">🎲 {{ t('kids.link') }}</RouterLink>
     </div>
     <p class="mt-12 text-sm text-muted">{{ t('end.credits') }}</p>
   </article>
