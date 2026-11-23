@@ -98,9 +98,6 @@ const GAMES: Game[] = [
   { id: 'teamLoan', theme: 'trust', emoji: '👫', level: 2, steps: 3 },
 ]
 
-const SKIPPED = ['nuclear', 'work', 'religion'] as const
-const TIPS = ['playFirst', 'rewards', 'debrief', 'path'] as const
-
 const filter = ref<Theme | 'all'>('all')
 const shown = computed(() => GAMES.filter((g) => filter.value === 'all' || g.theme === filter.value))
 
@@ -221,43 +218,6 @@ const choice = (game: Game, i: number) => g(game, i === 0 ? 'choiceA' : 'choiceB
         </li>
       </ul>
     </section>
-
-    <section class="space-y-3">
-      <h2>{{ t('kids.map.title') }}</h2>
-      <div class="card overflow-x-auto p-0">
-        <table class="w-full border-collapse text-left text-sm">
-          <thead class="bg-sand">
-            <tr>
-              <th scope="col" class="p-3">{{ t('kids.map.source') }}</th>
-              <th scope="col" class="p-3">{{ t('kids.map.concept') }}</th>
-              <th scope="col" class="p-3">{{ t('kids.map.game') }}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="game in GAMES" :key="game.id" class="border-t border-line align-top">
-              <td class="p-3">{{ g(game, 'source') }}</td>
-              <td class="p-3">{{ g(game, 'concept') }}</td>
-              <td class="p-3 font-semibold">{{ game.emoji }} {{ g(game, 'title') }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <div class="grid gap-5 md:grid-cols-2">
-      <section class="card space-y-3">
-        <h2 class="text-xl">🚫 {{ t('kids.skipped.title') }}</h2>
-        <ul class="list-disc space-y-2 pl-5 text-sm">
-          <li v-for="id in SKIPPED" :key="id">{{ t(`kids.skipped.${id}`) }}</li>
-        </ul>
-      </section>
-      <section class="card space-y-3">
-        <h2 class="text-xl">🧑‍🏫 {{ t('kids.tips.title') }}</h2>
-        <ul class="list-disc space-y-2 pl-5 text-sm">
-          <li v-for="id in TIPS" :key="id">{{ t(`kids.tips.${id}`) }}</li>
-        </ul>
-      </section>
-    </div>
 
     <p class="text-sm text-muted">{{ t('kids.credits') }}</p>
   </article>
